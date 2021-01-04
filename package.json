@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "eject": "vuepress eject src",
-    "deploy": "push-dir --dir=./.vuepress/dist --branch=gh-pages --cleanup"
+    "eject": "vuepress eject src"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
   },
   "homepage": "https://github.com/rathMiguel/nekonokotoba#readme",
   "devDependencies": {
-    "push-dir": "^0.4.1",
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
     "vuepress": "^1.7.1"
   }
 }
