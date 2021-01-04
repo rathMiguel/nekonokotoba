@@ -1,0 +1,26 @@
+{
+  "name": "nekonokotoba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "eject": "vuepress eject src",
+    "deploy": "push-dir --dir=./.vuepress/dist --branch=gh-pages --cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rathMiguel/nekonokotoba.git"
+  },
+  "author": "jukka rantanen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rathMiguel/nekonokotoba/issues"
+  },
+  "homepage": "https://github.com/rathMiguel/nekonokotoba#readme",
+  "devDependencies": {
+    "push-dir": "^0.4.1",
+    "vuepress": "^1.7.1"
+  }
+}

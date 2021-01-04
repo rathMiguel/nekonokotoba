@@ -1,0 +1,10 @@
+node_modules/
+/.vuepress/
+
+package-lock.json
+
+Thumbs.db
+
+.DS_STORE
+package-lock.json
+yarn.lock
