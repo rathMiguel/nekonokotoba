@@ -234,4 +234,4 @@ INTが非常に高い職
 王の花ギミックを遂行時、水門②の開閉係になると良き〇
 
 ## 参考リンク
-<a href="" download="https://dl.dropboxusercontent.com/s/f36vf9ce1xcz0hj/kojoumap2020_202003110007_2.pdf">古城全体マップ</a>  
+[古城全体マップ](https://dl.dropboxusercontent.com/s/f36vf9ce1xcz0hj/kojoumap2020_202003110007_2.pdf)
