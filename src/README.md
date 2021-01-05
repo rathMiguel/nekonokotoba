@@ -52,7 +52,7 @@ lang: ja
 
 ## 北区分
 
-[北区分マップ](/assets/img/kojo_north.png)
+![北区分マップ](/assets/img/kojo_north.png)
 
 天使が最も多く区分分けで最も負荷が高い
 
@@ -87,7 +87,7 @@ n52の王の墓方面の鍵を入手したら、n29から王の墓方面へ移�
 
 ## 南西区分
 
-[南西区分マップ](/assets/img/kojo_southwest.png)
+![南西区分マップ](/assets/img/kojo_southwest.png)
 
 ### おすすめ職
 
@@ -133,7 +133,7 @@ sw28のグローザ像に話すとギミックスタート
 
 ## 西、南区分（カタコンベ、神殿、水路）
 
-[西区分マップ](/assets/img/kojo_west.png)
+![西区分マップ](/assets/img/kojo_west.png)
 
 ### おすすめ職
 
@@ -218,7 +218,7 @@ w24のLUK130ギミックを解除すると、w25、w26へ入れる
 
 ## 東区分
 
-[東区分マップ](/assets/img/kojo_east.png)
+![東区分マップ](/assets/img/kojo_east.png)
 
 ### おすすめ職
 
