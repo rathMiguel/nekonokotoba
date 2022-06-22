@@ -2,6 +2,10 @@
 nav#nav
   ul.nav-list
     li
+      nuxt-link(to="/").link-wrap
+        font-awesome-icon(:icon="['far', 'heart']").icon
+        span.link-text HOME
+    li
       .link-wrap
         font-awesome-icon(:icon="['far', 'flag']").icon
         span.link-text EVENT DATA

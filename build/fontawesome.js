@@ -3,7 +3,8 @@ const solid = [
 ]
 
 const regular = [
-  'faFlag'
+  'faFlag',
+  'faHeart'
 ]
 
 export { solid, regular }
