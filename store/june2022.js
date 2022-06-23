@@ -6,6 +6,8 @@ export const state = () => ({
       label: 'ワイバーンキッド　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 70,
+      map: '飛行船襲撃',
       memo: ''
     },
     {
@@ -14,6 +16,8 @@ export const state = () => ({
       label: 'ワイバーン　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 70,
+      map: '飛行船襲撃',
       memo: ''
     },
     {
@@ -22,6 +26,8 @@ export const state = () => ({
       label: 'フェイヨン守護兵　5体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'サラの記憶',
       memo: ''
     },
     {
@@ -30,6 +36,8 @@ export const state = () => ({
       label: 'フェイヨン警備兵　12体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'サラの記憶',
       memo: ''
     },
     {
@@ -38,6 +46,8 @@ export const state = () => ({
       label: '大長老アイリン　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'サラの記憶',
       memo: ''
     },
     {
@@ -46,6 +56,8 @@ export const state = () => ({
       label: 'ペル　12体',
       baseexp: 4750000,
       point: 100,
+      lv: 96,
+      map: 'ジタバグ',
       memo: ''
     },
     {
@@ -54,6 +66,8 @@ export const state = () => ({
       label: 'スイング・ペル　8体',
       baseexp: 4750000,
       point: 100,
+      lv: 96,
+      map: 'ジタバグ',
       memo: ''
     },
     {
@@ -62,6 +76,8 @@ export const state = () => ({
       label: '包装されたボックス　5体',
       baseexp: 4750000,
       point: 100,
+      lv: 110,
+      map: 'ホラーおもちゃ工場',
       memo: ''
     },
     {
@@ -70,6 +86,8 @@ export const state = () => ({
       label: '怪奇な装飾ツリー　5体',
       baseexp: 4750000,
       point: 100,
+      lv: 110,
+      map: 'ホラーおもちゃ工場',
       memo: ''
     },
     {
@@ -78,6 +96,8 @@ export const state = () => ({
       label: '古代のマルク　2体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'マラン上級',
       memo: ''
     },
     {
@@ -86,6 +106,8 @@ export const state = () => ({
       label: '古代のオボンヌ　2体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'マラン上級',
       memo: ''
     },
     {
@@ -94,6 +116,8 @@ export const state = () => ({
       label: '死神アンク　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'ビオスの島',
       memo: ''
     },
     {
@@ -102,6 +126,8 @@ export const state = () => ({
       label: '生者の子デザートウルフ　3体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'ビオスの島',
       memo: ''
     },
     {
@@ -110,6 +136,8 @@ export const state = () => ({
       label: '生者のフェン　4体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'ビオスの島',
       memo: ''
     },
     {
@@ -118,6 +146,8 @@ export const state = () => ({
       label: '絶望の神モロク　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: '魔神殿',
       memo: ''
     },
     {
@@ -126,6 +156,8 @@ export const state = () => ({
       label: 'S・J・アーネストウルフ　1体',
       baseexp: 260000000,
       point: 200,
+      lv: 150,
+      map: '空中要塞',
       memo: ''
     },
     {
@@ -134,6 +166,8 @@ export const state = () => ({
       label: '不死のゾンビマスター　5体',
       baseexp: 260000000,
       point: 200,
+      lv: 150,
+      map: '空中要塞',
       memo: ''
     },
     {
@@ -142,6 +176,8 @@ export const state = () => ({
       label: '不死のラギットゾンビ　5体',
       baseexp: 260000000,
       point: 200,
+      lv: 150,
+      map: '空中要塞',
       memo: ''
     },
     {
@@ -150,6 +186,8 @@ export const state = () => ({
       label: 'イーブル　1体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ハートハンター軍事基地',
       memo: ''
     },
     {
@@ -158,6 +196,8 @@ export const state = () => ({
       label: 'ハートハンターFW　7体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ハートハンター軍事基地',
       memo: ''
     },
     {
@@ -166,6 +206,8 @@ export const state = () => ({
       label: 'ハートハンターBC　7体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ハートハンター軍事基地',
       memo: ''
     },
     {
@@ -174,6 +216,8 @@ export const state = () => ({
       label: 'ゾンビガード　2体',
       baseexp: 22500000,
       point: 200,
+      lv: 150,
+      map: '空中要塞',
       memo: ''
     },
     {
@@ -182,6 +226,8 @@ export const state = () => ({
       label: 'コヨーテ　15体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: 'キワワ砂漠',
       memo: ''
     },
     {
@@ -190,6 +236,8 @@ export const state = () => ({
       label: 'プラズマラット　10体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ロックリッジ地下街',
       memo: ''
     },
     {
@@ -198,6 +246,8 @@ export const state = () => ({
       label: 'トップブレードライダー　5体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ロックリッジ鉱山',
       memo: ''
     },
     {
@@ -206,6 +256,8 @@ export const state = () => ({
       label: 'フレイムコンドル　7体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'フレイムヴァレー',
       memo: ''
     },
     {
@@ -214,6 +266,8 @@ export const state = () => ({
       label: 'フレイムゴーレム　7体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'フレイムヴァレー',
       memo: ''
     },
     {
@@ -222,6 +276,8 @@ export const state = () => ({
       label: 'ハートハンター・Mサナレ　7体',
       baseexp: 8000000000,
       point: 300,
+      lv: 175,
+      map: 'ルドゥス',
       memo: ''
     },
     {
@@ -230,6 +286,8 @@ export const state = () => ({
       label: '古のSゴーレム　10体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILコモド',
       memo: ''
     },
     {
@@ -238,6 +296,8 @@ export const state = () => ({
       label: '古のメガリス　10体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILコモド',
       memo: ''
     },
     {
@@ -246,6 +306,8 @@ export const state = () => ({
       label: '怒りの九尾狐　15体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILフェイヨン',
       memo: ''
     },
     {
@@ -254,6 +316,8 @@ export const state = () => ({
       label: '怨恨のソヒー　17体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILフェイヨン',
       memo: ''
     },
     {
@@ -262,6 +326,8 @@ export const state = () => ({
       label: 'ミグエル　1体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'オース',
       memo: ''
     },
     {
@@ -270,6 +336,8 @@ export const state = () => ({
       label: '呪いを呑み込んだ王　1体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'EDDAGH',
       memo: ''
     },
     {
@@ -278,6 +346,8 @@ export const state = () => ({
       label: '白騎士の思念　3体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'EDDAGH',
       memo: ''
     },
     {
@@ -286,6 +356,8 @@ export const state = () => ({
       label: 'メイドの思念　4体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'EDDAGH',
       memo: ''
     },
     {
@@ -294,6 +366,8 @@ export const state = () => ({
       label: '下水ウォーターフォール　12体',
       baseexp: 2600000000,
       point: 300,
+      lv: 165,
+      map: 'バルムン下水',
       memo: ''
     },
     {
@@ -302,6 +376,8 @@ export const state = () => ({
       label: '徘徊する魔導書　10体',
       baseexp: 8000000000,
       point: 300,
+      lv: 170,
+      map: '図書館',
       memo: ''
     },
     {
@@ -310,6 +386,8 @@ export const state = () => ({
       label: '故障したベータ　4体',
       baseexp: 8000000000,
       point: 300,
+      lv: 165,
+      map: 'バルムント庭園',
       memo: ''
     },
     {
@@ -318,6 +396,8 @@ export const state = () => ({
       label: '自動お掃除機オメガ　2体',
       baseexp: 2600000000,
       point: 300,
+      lv: 165,
+      map: 'バルムント庭園',
       memo: ''
     },
     {
@@ -326,6 +406,8 @@ export const state = () => ({
       label: 'ドライラフレシア　2体',
       baseexp: 12000000000,
       point: 300,
+      lv: 175,
+      map: '保安区域',
       memo: ''
     },
     {
@@ -334,6 +416,8 @@ export const state = () => ({
       label: 'レッドペッパーカッパ　1体',
       baseexp: 12000000000,
       point: 300,
+      lv: 175,
+      map: '保安区域',
       memo: ''
     },
     {
@@ -342,6 +426,8 @@ export const state = () => ({
       label: 'ミニオン(中級)(苦痛のロイヤルナイト)　3体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'LOVA',
       memo: ''
     },
     {
@@ -350,6 +436,8 @@ export const state = () => ({
       label: 'ミニオン(中級)(深淵の騎士)　3体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'LOVA',
       memo: ''
     },
     {
@@ -358,6 +446,8 @@ export const state = () => ({
       label: '暴虐のシーラカンス　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'マラン上級',
       memo: ''
     },
     {
@@ -366,6 +456,8 @@ export const state = () => ({
       label: '変異のシーラカンス　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 90,
+      map: 'マラン上級',
       memo: ''
     },
     {
@@ -374,6 +466,8 @@ export const state = () => ({
       label: '誘惑の魔神の影　4体',
       baseexp: 4750000,
       point: 100,
+      lv: 70,
+      map: '魔神の塔',
       memo: ''
     },
     {
@@ -382,6 +476,8 @@ export const state = () => ({
       label: '絶念の魔神の影　4体',
       baseexp: 4750000,
       point: 100,
+      lv: 70,
+      map: '魔神の塔',
       memo: ''
     },
     {
@@ -390,6 +486,8 @@ export const state = () => ({
       label: '腐敗した兵士　5体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: '古のグラストヘイム',
       memo: ''
     },
     {
@@ -398,6 +496,8 @@ export const state = () => ({
       label: '呪われた騎士　3体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: '古のグラストヘイム',
       memo: ''
     },
     {
@@ -406,6 +506,8 @@ export const state = () => ({
       label: 'パワフルアムダライス　1体',
       baseexp: 260000000,
       point: 200,
+      lv: 160,
+      map: '過去の儀式の間',
       memo: ''
     },
     {
@@ -414,6 +516,8 @@ export const state = () => ({
       label: 'パワフルAスケルトン　1体',
       baseexp: 260000000,
       point: 200,
+      lv: 160,
+      map: '過去の儀式の間',
       memo: ''
     },
     {
@@ -422,6 +526,8 @@ export const state = () => ({
       label: 'パワフルスケルトン　1体',
       baseexp: 260000000,
       point: 200,
+      lv: 160,
+      map: '過去の儀式の間',
       memo: ''
     },
     {
@@ -430,6 +536,8 @@ export const state = () => ({
       label: 'ギガンテス　4体',
       baseexp: 45000000,
       point: 200,
+      lv: 120,
+      map: 'フェンリルとサラ',
       memo: ''
     },
     {
@@ -438,6 +546,8 @@ export const state = () => ({
       label: '双斧ギガンテス　3体',
       baseexp: 45000000,
       point: 200,
+      lv: 120,
+      map: 'フェンリルとサラ',
       memo: ''
     },
     {
@@ -446,6 +556,8 @@ export const state = () => ({
       label: 'ブリナラネア　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: '魔神殿',
       memo: ''
     },
     {
@@ -454,6 +566,8 @@ export const state = () => ({
       label: 'フェイスワーム　5体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'フェイスワームの巣',
       memo: ''
     },
     {
@@ -462,6 +576,8 @@ export const state = () => ({
       label: 'ブレードライダー　13体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: 'キワワ砂漠',
       memo: ''
     },
     {
@@ -470,6 +586,8 @@ export const state = () => ({
       label: 'カニバラウス　10体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ロックリッジ地下街',
       memo: ''
     },
     {
@@ -478,6 +596,8 @@ export const state = () => ({
       label: 'ガスター　2体',
       baseexp: 2600000000,
       point: 200,
+      lv: 160,
+      map: 'ロックリッジ鉱山',
       memo: ''
     },
     {
@@ -486,6 +606,8 @@ export const state = () => ({
       label: 'ハートハンター・Mベラレ　13体',
       baseexp: 8000000000,
       point: 300,
+      lv: 175,
+      map: 'ルドゥス',
       memo: ''
     },
     {
@@ -494,6 +616,8 @@ export const state = () => ({
       label: '怒りのスノウアー　15体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'IL氷',
       memo: ''
     },
     {
@@ -502,6 +626,8 @@ export const state = () => ({
       label: '怒りのゲイズティ　15体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'IL氷',
       memo: ''
     },
     {
@@ -510,6 +636,8 @@ export const state = () => ({
       label: '赤色のベアドール　5体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILアイン',
       memo: ''
     },
     {
@@ -518,6 +646,8 @@ export const state = () => ({
       label: '黄色のベアドール　5体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILアイン',
       memo: ''
     },
     {
@@ -526,6 +656,8 @@ export const state = () => ({
       label: '安らぎを奪われし亡者　10体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILゲフェン',
       memo: ''
     },
     {
@@ -534,6 +666,8 @@ export const state = () => ({
       label: 'マットドレインリアー　10体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILゲフェン',
       memo: ''
     },
     {
@@ -542,6 +676,8 @@ export const state = () => ({
       label: 'EA2S　3体',
       baseexp: 8000000000,
       point: 300,
+      lv: 175,
+      map: 'コルメモ',
       memo: ''
     },
     {
@@ -550,6 +686,8 @@ export const state = () => ({
       label: '下水ヴェネヌム　10体',
       baseexp: 2600000000,
       point: 300,
+      lv: 165,
+      map: 'バルムン下水',
       memo: ''
     },
     {
@@ -558,6 +696,8 @@ export const state = () => ({
       label: 'ブックワーム　13体',
       baseexp: 8000000000,
       point: 300,
+      lv: 170,
+      map: '図書館',
       memo: ''
     },
     {
@@ -566,6 +706,8 @@ export const state = () => ({
       label: 'ブルーアリエス　2体',
       baseexp: 16000000000,
       point: 300,
+      lv: 180,
+      map: '水上植物園',
       memo: ''
     },
     {
@@ -574,6 +716,8 @@ export const state = () => ({
       label: 'キックアンドキック　5体',
       baseexp: 4750000,
       point: 100,
+      lv: 100,
+      map: 'チャールストン工場',
       memo: ''
     },
     {
@@ -582,6 +726,8 @@ export const state = () => ({
       label: 'ステップ　6体',
       baseexp: 4750000,
       point: 100,
+      lv: 100,
+      map: 'チャールストン工場',
       memo: ''
     },
     {
@@ -590,6 +736,8 @@ export const state = () => ({
       label: '憎しみの塊　3体',
       baseexp: 4750000,
       point: 100,
+      lv: 100,
+      map: '呪いの剣士',
       memo: ''
     },
     {
@@ -598,6 +746,8 @@ export const state = () => ({
       label: '取り戻せぬ愛　3体',
       baseexp: 4750000,
       point: 100,
+      lv: 100,
+      map: '呪いの剣士',
       memo: ''
     },
     {
@@ -606,6 +756,8 @@ export const state = () => ({
       label: '頭領タコ　1体',
       baseexp: 4750000,
       point: 100,
+      lv: 0,
+      map: '暴窟王の洞窟',
       memo: ''
     },
     {
@@ -614,6 +766,8 @@ export const state = () => ({
       label: '子分タコ　6体',
       baseexp: 4750000,
       point: 100,
+      lv: 0,
+      map: '暴窟王の洞窟',
       memo: ''
     },
     {
@@ -622,6 +776,8 @@ export const state = () => ({
       label: '怨恨の兵士　5体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: '古のグラストヘイム',
       memo: ''
     },
     {
@@ -630,6 +786,8 @@ export const state = () => ({
       label: '怨恨の白の騎士　3体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: '古のグラストヘイム',
       memo: ''
     },
     {
@@ -638,6 +796,8 @@ export const state = () => ({
       label: 'フレイムサンドマン　7体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'フレイムヴァレー',
       memo: ''
     },
     {
@@ -646,6 +806,8 @@ export const state = () => ({
       label: 'モルス・ネクロマンサー　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'モルス',
       memo: ''
     },
     {
@@ -654,6 +816,8 @@ export const state = () => ({
       label: 'サラの幻影　1体',
       baseexp: 45000000,
       point: 200,
+      lv: 120,
+      map: 'フェンリルとサラ',
       memo: ''
     },
     {
@@ -662,6 +826,8 @@ export const state = () => ({
       label: 'ムスペルスコール　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: '魔神殿',
       memo: ''
     },
     {
@@ -670,6 +836,8 @@ export const state = () => ({
       label: 'ダークフェイスワーム　1体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: 'フェイスワームの巣',
       memo: ''
     },
     {
@@ -678,6 +846,8 @@ export const state = () => ({
       label: 'サイドライダー　15体',
       baseexp: 85000000,
       point: 200,
+      lv: 130,
+      map: 'キワワ砂漠',
       memo: ''
     },
     {
@@ -686,6 +856,8 @@ export const state = () => ({
       label: 'タフィー　13体',
       baseexp: 260000000,
       point: 200,
+      lv: 150,
+      map: 'プロンテラ地下監獄',
       memo: ''
     },
     {
@@ -694,6 +866,8 @@ export const state = () => ({
       label: 'フローズンウルフ　13体',
       baseexp: 260000000,
       point: 200,
+      lv: 150,
+      map: 'プロンテラ地下監獄',
       memo: ''
     },
     {
@@ -702,6 +876,8 @@ export const state = () => ({
       label: 'GC109　3体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: '最後の部屋',
       memo: ''
     },
     {
@@ -710,6 +886,8 @@ export const state = () => ({
       label: 'DR815　3体',
       baseexp: 155000000,
       point: 200,
+      lv: 140,
+      map: '最後の部屋',
       memo: ''
     },
     {
@@ -718,6 +896,8 @@ export const state = () => ({
       label: '変種プラガ　7体',
       baseexp: 8000000000,
       point: 300,
+      lv: 175,
+      map: 'ルドゥス',
       memo: ''
     },
     {
@@ -726,6 +906,8 @@ export const state = () => ({
       label: '不吉なヒートタートル　7体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'IL亀',
       memo: ''
     },
     {
@@ -734,6 +916,8 @@ export const state = () => ({
       label: '不吉なフリーズタートル　7体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'IL亀',
       memo: ''
     },
     {
@@ -742,6 +926,8 @@ export const state = () => ({
       label: '混沌のバフォメット.Jr　5体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILプロ北',
       memo: ''
     },
     {
@@ -750,6 +936,8 @@ export const state = () => ({
       label: '混沌のサイドワインダー　5体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ILプロ北',
       memo: ''
     },
     {
@@ -758,6 +946,8 @@ export const state = () => ({
       label: 'Y.S.F.0.1セイレン　1体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'ヴェルナー研究室中央',
       memo: ''
     },
     {
@@ -766,6 +956,8 @@ export const state = () => ({
       label: '特製アーノルディ　3体',
       baseexp: 12000000000,
       point: 300,
+      lv: 175,
+      map: '保安区域',
       memo: ''
     },
     {
@@ -774,6 +966,8 @@ export const state = () => ({
       label: 'シルヴァパピリア　1体',
       baseexp: 16000000000,
       point: 300,
+      lv: 180,
+      map: '水上植物園',
       memo: ''
     },
     {
@@ -782,6 +976,8 @@ export const state = () => ({
       label: '魔力中毒ドロール　13体',
       baseexp: 2600000000,
       point: 300,
+      lv: 165,
+      map: '第1魔力発電所',
       memo: ''
     },
     {
@@ -790,6 +986,8 @@ export const state = () => ({
       label: 'スウィーティ　1体',
       baseexp: 16000000000,
       point: 300,
+      lv: 180,
+      map: 'スウィーティ',
       memo: ''
     },
     {
@@ -798,6 +996,8 @@ export const state = () => ({
       label: 'エリート警備兵長　3体',
       baseexp: 4000000000,
       point: 300,
+      lv: 170,
+      map: 'EDDA戦闘モード',
       memo: ''
     },
     {
@@ -806,6 +1006,8 @@ export const state = () => ({
       label: '深海のスロフォ討伐　12体',
       baseexp: 8000000000,
       point: 300,
+      lv: 180,
+      map: 'IL伊豆',
       memo: ''
     },
     {
@@ -814,6 +1016,8 @@ export const state = () => ({
       label: '真面目なデニーロ討伐　7体',
       baseexp: 8000000000,
       point: 300,
+      lv: 180,
+      map: 'IL蟻',
       memo: ''
     },
     {
@@ -822,6 +1026,8 @@ export const state = () => ({
       label: 'レッドピタヤ討伐　2体',
       baseexp: 0,
       point: 300,
+      lv: 185,
+      map: 'ピタヤ',
       memo: ''
     },
     {
@@ -830,6 +1036,8 @@ export const state = () => ({
       label: '呪われた執事討伐　10体',
       baseexp: 0,
       point: 300,
+      lv: 185,
+      map: 'GHC',
       memo: ''
     }
   ]

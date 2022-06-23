@@ -32,7 +32,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filter.js',
-    { src: '~/plugins/persistedstate.js', ssr: false}
+    { src: '~/plugins/persistedstate.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,9 +54,9 @@ export default {
     }
   },
 
-  env: {
-    WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL
-  },
+  // env: {
+  //   WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL
+  // },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
