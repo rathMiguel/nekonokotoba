@@ -12,6 +12,14 @@ nav#nav
       ul
         li
           nuxt-link(to="/event/june2022").link-wrap LoveLoveWedding大作戦2022
+    li
+      .link-wrap
+        font-awesome-icon(:icon="['far', 'rectangle-list']").icon
+        span.link-text DATA BASE
+    li
+      .link-wrap
+        font-awesome-icon(:icon="['far', 'sun']").icon
+        span.link-text TOOLS
 </template>
 
 <style lang="scss" scoped>
