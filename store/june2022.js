@@ -1045,7 +1045,8 @@ export const state = () => ({
 
 export const mutations = {
   updateTodo: (state, payload) => {
-    state.todos[payload].todo = state.todos[payload].todo ? false : true
+    const result = state.todos.findIndex((value) => value.id === payload)
+    state.todos[result].todo = state.todos[result].todo ? false : true
   },
   resetTodo (state) {
     state.todos.forEach(element => {

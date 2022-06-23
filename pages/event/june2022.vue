@@ -19,11 +19,10 @@ div
             th 生息MAP
         tbody
           template(v-for="value, index in $store.getters['june2022/getToDos']")
-            tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(index)")
+            tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
               td.centered
                 input(type="checkbox" v-model="value.todo")
               td {{ value.label }}
-                //- pre {{ value.id }}
               td {{ value.baseexp | addComma }}
               td {{ value.point | addComma }}
               td.centered {{ value.lv }}
@@ -38,8 +37,8 @@ export default {
     }
   },
   methods: {
-    doneTask (index) {
-      this.$store.dispatch('june2022/todoCheckAction', index)
+    doneTask (value) {
+      this.$store.dispatch('june2022/todoCheckAction', value.id)
     },
     resetTask () {
       this.$store.dispatch('june2022/resetTodosAction')
