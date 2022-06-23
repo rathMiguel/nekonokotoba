@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@use '~/assets/scss/settings' as *;
+@use '~/assets/scss/mixins' as *;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select{
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #BBBBBB;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 8px;
+  padding: 6px 10px;
+  
+  &:focus{
+    border: 2px solid #BBBBBB;
+    outline: none;
+    box-shadow: 0 0 5px rgba(#73B9FF, 0.8);
+  }
+
+  &::placeholder{
+    color: #CCC;
+  }
+}
+
+textarea{
+  height: 7em;
+}
+
+select{
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+label{
+  position: relative;
+}
+
+.input-full{
+  width: 100%;
+}

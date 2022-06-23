@@ -3,10 +3,13 @@ div
   .main-header
     h1 LoveLoveWedding大作戦2022 討伐リスト
   .main-content
-    //- pre {{ $store.getters['june2022/getToDos'] }}
-    //- pre {{ $store.getters['june2022/doneTodos'] }}
+    //- pre {{ $data }}
+    //- pre {{ $store.getters['june2022/filteredTasks'] }}
     .controllers
-      button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
+      .controller__buttons
+        button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
+      .controller__search
+        input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="handleChangeQuery").input-full
     .table-wrap
       table.table
         thead
@@ -18,7 +21,7 @@ div
             th Lv
             th 生息MAP
         tbody
-          template(v-for="value, index in $store.getters['june2022/getToDos']")
+          template(v-for="value, index in $store.getters['june2022/filteredTasks']")
             tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
               td.centered
                 input(type="checkbox" v-model="value.todo")
@@ -30,11 +33,23 @@ div
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
-  computed: {
-    getGettersValue () {
-      return this.$store.getters('june2022/getToDos')
+  data() {
+    return {
+      filterQuery: {
+        label: '',
+      }
     }
+  },
+  computed: {
+    ...mapGetters('todo', [
+      'filteredTasks'
+    ]),
+  },
+  mounted() {
+    this.$store.dispatch('june2022/setFilterQuery', this.filterQuery)
   },
   methods: {
     doneTask (value) {
@@ -42,7 +57,10 @@ export default {
     },
     resetTask () {
       this.$store.dispatch('june2022/resetTodosAction')
-    }
+    },
+    handleChangeQuery () {
+      this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
+    },
   }
 }
 </script>
@@ -52,6 +70,7 @@ export default {
 @use '~/assets/scss/mixins' as *;
 
 @use '~/assets/scss/buttons' as button;
+@use '~/assets/scss/form' as form;
 
 .main-header{
   margin-bottom: 40px;
@@ -68,6 +87,9 @@ export default {
 
 .controllers{
   margin-top: 1.5em;
+  & > * {
+    margin-bottom: 15px;
+  }
 }
 
 .table-wrap{

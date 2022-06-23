@@ -45,6 +45,11 @@ nav#nav
         @include media(sm){
           padding-left: 1.5em;
         }
+        li{
+          @include media(sm){
+            border-bottom: none;
+          }
+        }
       }
     }
     .icon{

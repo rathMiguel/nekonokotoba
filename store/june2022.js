@@ -1040,7 +1040,10 @@ export const state = () => ({
       map: 'GHC',
       memo: ''
     }
-  ]
+  ],
+  filterQuery: {
+    label: ''
+  }
 })
 
 export const mutations = {
@@ -1052,6 +1055,10 @@ export const mutations = {
     state.todos.forEach(element => {
       element.todo = false
     })
+  },
+  setFilterQuery(state, filterQuery) {
+    console.log(filterQuery)
+    state.filterQuery = {...filterQuery};
   }
 }
 
@@ -1061,6 +1068,9 @@ export const actions = {
   },
   resetTodosAction (context) {
     context.commit('resetTodo')
+  },
+  setFilterQueryAction (context, payload) {
+    context.commit('setFilterQuery', payload)
   }
 }
 
@@ -1068,7 +1078,15 @@ export const getters = {
   getToDos (state) {
     return state.todos
   },
-  doneTodos (state) {
-    return state.todos.filter(todo => todo.todo)
+  filteredTasks (state) {
+    let data = state.todos
+
+    if (state.filterQuery.label !== '') {
+      data = data.filter((row) => {
+        return row['label'].indexOf(state.filterQuery.label) !== -1;
+      })
+    }
+
+    return data
   }
 }
