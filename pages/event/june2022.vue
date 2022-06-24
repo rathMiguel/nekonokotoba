@@ -34,11 +34,20 @@ div
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from 'vuex'
+import Meta from '~/plugins/meta'
 
 export default {
+  mixins: [Meta],
   data() {
     return {
+      meta: {
+        title: `LoveLoveWedding大作戦2022 討伐リスト - ${process.env.BASETITLE}`,
+        description: 'TODOリスト付きLoveLoveWedding大作戦2022の討伐リストを公開しています。',
+        type: 'website',
+        url: `${process.env.BASEURL}/event/june2022/`,
+        image: `${process.env.BASEURL}/ogp.jpg`
+      },
       filterQuery: {
         label: ''
       }
@@ -154,7 +163,7 @@ export default {
   .icon-check{
     font-size: 1.2em;
     &.check-true{
-      color: lighten($color-default, 30%);
+      color: $color-default;
     }
     &.check-false{
       color: darken($color-caution, 40%);

@@ -54,9 +54,10 @@ export default {
     }
   },
 
-  // env: {
-  //   WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL
-  // },
+  env: {
+    BASETITLE: process.env.BASETITLE,
+    BASEURL: process.env.BASEURL
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
