@@ -12,7 +12,7 @@ export default {
         description: 'ラグナロクオンライン内で集めたデータやちょっと便利かもしれないツール等を公開しています。',
         type: 'website',
         url: `${process.env.BASEURL}/event/june2022/`,
-        image: `${process.env.BASEURL}/ogp.jpg`
+        image: `${process.env.BASEURL}/ogp.png`
       },
       filterQuery: {
         label: ''

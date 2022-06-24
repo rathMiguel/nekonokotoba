@@ -46,7 +46,7 @@ export default {
         description: 'TODOリスト付きLoveLoveWedding大作戦2022の討伐リストを公開しています。',
         type: 'website',
         url: `${process.env.BASEURL}/event/june2022/`,
-        image: `${process.env.BASEURL}/ogp.jpg`
+        image: `${process.env.BASEURL}/ogp.png`
       },
       filterQuery: {
         label: ''
