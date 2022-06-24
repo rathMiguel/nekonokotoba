@@ -24,7 +24,9 @@ div
           template(v-for="value, index in $store.getters['june2022/filteredTasks']")
             tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
               td.centered
-                input(type="checkbox" v-model="value.todo")
+                font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
+                font-awesome-icon(:icon="['far', 'square-check']" v-if="value.todo === true").icon.icon-check.check-false
+                //- input(type="checkbox" v-model="value.todo")
               td {{ value.label }}
               td {{ value.baseexp | addComma }}
               td {{ value.point | addComma }}
@@ -39,7 +41,7 @@ export default {
   data() {
     return {
       filterQuery: {
-        label: '',
+        label: ''
       }
     }
   },
@@ -106,20 +108,24 @@ export default {
   @include media(sm-md){
     width: 800px;
   }
-  thead{
-    background-color: $color-primary;
-    color: #FFF;
-    th, td{
-      white-space: nowrap;
-    }
-  }
   tr{
+    background-color: #fff;
     &:nth-child(even){
       background-color: #EEE;
     }
   }
   th, td{
     padding: 13px 10px;
+  }
+
+  thead{
+    tr{
+      background-color: $color-primary;
+      color: #FFF;
+    }
+    th, td{
+      white-space: nowrap;
+    }
   }
 
   tbody{
@@ -138,6 +144,16 @@ export default {
 
   .is-ended{
     background-color: $color-caution !important;
+  }
+
+  .icon-check{
+    font-size: 1.2em;
+    &.check-true{
+      color: lighten($color-default, 30%);
+    }
+    &.check-false{
+      color: darken($color-caution, 40%);
+    }
   }
 }
 </style>

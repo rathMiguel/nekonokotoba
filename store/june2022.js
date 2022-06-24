@@ -1075,15 +1075,13 @@ export const actions = {
 }
 
 export const getters = {
-  getToDos (state) {
-    return state.todos
-  },
   filteredTasks (state) {
     let data = state.todos
-
+    
     if (state.filterQuery.label !== '') {
       data = data.filter((row) => {
-        return row['label'].indexOf(state.filterQuery.label) !== -1;
+        return row['label'].indexOf(state.filterQuery.label) !== -1 ||
+        row['map'].indexOf(state.filterQuery.label) !== -1
       })
     }
 

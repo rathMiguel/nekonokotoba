@@ -6,6 +6,8 @@ const regular = [
   'faFlag',
   'faRectangleList',
   'faSun',
+  'faSquare',
+  'faSquareCheck',
   'faHeart'
 ]
 
