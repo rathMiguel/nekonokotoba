@@ -26,7 +26,6 @@ div
               td.centered
                 font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
                 font-awesome-icon(:icon="['far', 'square-check']" v-if="value.todo === true").icon.icon-check.check-false
-                //- input(type="checkbox" v-model="value.todo")
               td {{ value.label }}
               td {{ value.baseexp | addComma }}
               td {{ value.point | addComma }}
@@ -91,6 +90,12 @@ export default {
   margin-top: 1.5em;
   & > * {
     margin-bottom: 15px;
+  }
+
+  .controller{
+    &__buttons{
+      text-align: right;
+    }
   }
 }
 
