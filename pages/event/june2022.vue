@@ -6,41 +6,42 @@ div
     //- pre {{ $data }}
     //- pre {{ $store.getters['june2022/filteredTasks'] }}
     //- pre {{ $store.state }}
-    .controllers
-      .controller__buttons
-        button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
-      .controller__search
-        input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="handleChangeQuery").input-full
-    .table-wrap
-      table.table
-        thead
-          tr
-            th(v-on:click="sortQuery('todo')").sortable ToDo
-              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== -1}").icon.sortable-up
-              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== 1}").icon.sortable-down
-            th 討伐対象
-            th(v-on:click="sortQuery('baseexp')").sortable 報酬Exp
-              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== -1}").icon.sortable-up
-              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== 1}").icon.sortable-down
-            th(v-on:click="sortQuery('point')").sortable 報酬Bポイント
-              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== -1}").icon.sortable-up
-              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== 1}").icon.sortable-down
-            th(v-on:click="sortQuery('lv')").sortable Lv
-              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== -1}").icon.sortable-up
-              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== 1}").icon.sortable-down
-            th 生息MAP
-        tbody
-          template(v-for="value, index in $store.getters['june2022/filteredTasks']")
-            tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
-              td.centered
-                font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
-                font-awesome-icon(:icon="['far', 'square-check']" v-if="value.todo === true").icon.icon-check.check-false
-                
-              td {{ value.label }}
-              td {{ value.baseexp | addComma }}
-              td {{ value.point | addComma }}
-              td.centered {{ value.lv }}
-              td {{ value.map }}
+    client-only(placeholder="Loading...")
+      .controllers
+        .controller__buttons
+          button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
+        .controller__search
+          input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="handleChangeQuery").input-full
+      .table-wrap
+        table.table
+          thead
+            tr
+              th(v-on:click="sortQuery('todo')").sortable ToDo
+                font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== -1}").icon.sortable-up
+                font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== 1}").icon.sortable-down
+              th 討伐対象
+              th(v-on:click="sortQuery('baseexp')").sortable 報酬Exp
+                font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== -1}").icon.sortable-up
+                font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== 1}").icon.sortable-down
+              th(v-on:click="sortQuery('point')").sortable 報酬Bポイント
+                font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== -1}").icon.sortable-up
+                font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== 1}").icon.sortable-down
+              th(v-on:click="sortQuery('lv')").sortable Lv
+                font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== -1}").icon.sortable-up
+                font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== 1}").icon.sortable-down
+              th 生息MAP
+          tbody
+            template(v-for="value, index in $store.getters['june2022/filteredTasks']")
+              tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
+                td.centered
+                  font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
+                  font-awesome-icon(:icon="['far', 'square-check']" v-if="value.todo === true").icon.icon-check.check-false
+                  
+                td {{ value.label }}
+                td {{ value.baseexp | addComma }}
+                td {{ value.point | addComma }}
+                td.centered {{ value.lv }}
+                td {{ value.map }}
 </template>
 
 <script>
