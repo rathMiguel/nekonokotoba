@@ -1,5 +1,8 @@
 const solid = [
-
+  'faAngleUp',
+  'faAngleRight',
+  'faAngleDown',
+  'faAngleLeft'
 ]
 
 const regular = [

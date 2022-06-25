@@ -1041,6 +1041,10 @@ export const state = () => ({
       memo: ''
     }
   ],
+  sort: {
+    target: '',
+    asc: 1
+  },
   filterQuery: {
     label: ''
   }
@@ -1057,8 +1061,10 @@ export const mutations = {
     })
   },
   setFilterQuery(state, filterQuery) {
-    console.log(filterQuery)
-    state.filterQuery = {...filterQuery};
+    state.filterQuery = {...filterQuery}
+  },
+  sortQuery (state, sortQuery) {
+    state.sort = {...sortQuery}
   }
 }
 
@@ -1071,13 +1077,16 @@ export const actions = {
   },
   setFilterQueryAction (context, payload) {
     context.commit('setFilterQuery', payload)
+  },
+  sortQueryAction (context, payload) {
+    console.log(payload)
+    context.commit('sortQuery', payload)
   }
 }
 
 export const getters = {
   filteredTasks (state) {
     let data = state.todos
-    
     if (state.filterQuery.label !== '') {
       data = data.filter((row) => {
         return row['label'].indexOf(state.filterQuery.label) !== -1 ||
@@ -1085,6 +1094,16 @@ export const getters = {
       })
     }
 
-    return data
+    const dataSorted = data.slice().sort((first, second) => {
+      if (first[state.sort.target] > second[state.sort.target]){
+        return state.sort.asc
+      }else if (first[state.sort.target] < second[state.sort.target]){
+        return state.sort.asc * -1
+      }else{
+        return 0;
+      }
+    })
+
+    return dataSorted
   }
 }

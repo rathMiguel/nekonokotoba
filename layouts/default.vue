@@ -10,6 +10,8 @@
 @use '~/assets/scss/settings' as *;
 @use '~/assets/scss/mixins' as *;
 
+@use '~/assets/scss/form' as form;
+
 body {
   font-family: $ja_go;
   font-size: $fz-default;

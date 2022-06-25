@@ -5,6 +5,7 @@ div
   .main-content
     //- pre {{ $data }}
     //- pre {{ $store.getters['june2022/filteredTasks'] }}
+    //- pre {{ $store.state }}
     .controllers
       .controller__buttons
         button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
@@ -14,11 +15,19 @@ div
       table.table
         thead
           tr
-            th ToDo
+            th(v-on:click="sortQuery('todo')").sortable ToDo
+              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== -1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== 1}").icon.sortable-down
             th 討伐対象
-            th 報酬Exp
-            th 報酬Bポイント
-            th Lv
+            th(v-on:click="sortQuery('baseexp')").sortable 報酬Exp
+              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== -1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== 1}").icon.sortable-down
+            th(v-on:click="sortQuery('point')").sortable 報酬Bポイント
+              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== -1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== 1}").icon.sortable-down
+            th(v-on:click="sortQuery('lv')").sortable Lv
+              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== -1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== 1}").icon.sortable-down
             th 生息MAP
         tbody
           template(v-for="value, index in $store.getters['june2022/filteredTasks']")
@@ -26,6 +35,7 @@ div
               td.centered
                 font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
                 font-awesome-icon(:icon="['far', 'square-check']" v-if="value.todo === true").icon.icon-check.check-false
+                
               td {{ value.label }}
               td {{ value.baseexp | addComma }}
               td {{ value.point | addComma }}
@@ -48,6 +58,10 @@ export default {
         url: `${process.env.BASEURL}/event/june2022/`,
         image: `${process.env.BASEURL}/ogp.png`
       },
+      sort: {
+        target: '',
+        asc: 1
+      },
       filterQuery: {
         label: ''
       }
@@ -56,10 +70,11 @@ export default {
   computed: {
     ...mapGetters('todo', [
       'filteredTasks'
-    ]),
+    ])
   },
   mounted() {
-    this.$store.dispatch('june2022/setFilterQuery', this.filterQuery)
+    this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
+    this.$store.dispatch('june2022/sortQueryAction', this.sort)
   },
   methods: {
     doneTask (value) {
@@ -71,6 +86,15 @@ export default {
     handleChangeQuery () {
       this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
     },
+    sortQuery (value) {
+      this.sort.target =  value
+      if(this.sort.asc === 1 && this.sort.target === value) {
+        this.sort.asc = -1
+      } else {
+        this.sort.asc = 1
+      }
+      this.$store.dispatch('june2022/sortQueryAction', this.sort)
+    }
   }
 }
 </script>
@@ -80,7 +104,6 @@ export default {
 @use '~/assets/scss/mixins' as *;
 
 @use '~/assets/scss/buttons' as button;
-@use '~/assets/scss/form' as form;
 
 .main-header{
   margin-bottom: 40px;
@@ -146,6 +169,29 @@ export default {
     tr{
       cursor: pointer;
     }
+  }
+
+  .sortable{
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5em;
+  }
+
+  .sortable-up,
+  .sortable-down{
+    position: absolute;
+    right: 0.5em;
+    opacity: 0.85;
+    &.nonactive{
+      opacity: 0.3;
+    }
+  }
+
+  .sortable-up{
+    bottom: calc(50% - 1px);
+  }
+  .sortable-down{
+    top: calc(50% - 1px);
   }
 
   .centered{
