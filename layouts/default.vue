@@ -10,6 +10,7 @@
 @use '~/assets/scss/settings' as *;
 @use '~/assets/scss/mixins' as *;
 
+@use '~/assets/scss/buttons' as button;
 @use '~/assets/scss/form' as form;
 
 body {
