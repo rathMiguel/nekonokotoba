@@ -4,7 +4,7 @@ export const state = () => ({
   todos: itemData,
   sort: {
     target: '',
-    asc: 1
+    asc: 0
   },
   filterQuery: {
     label: ''
@@ -40,7 +40,6 @@ export const actions = {
     context.commit('setFilterQuery', payload)
   },
   sortQueryAction (context, payload) {
-    console.log(payload)
     context.commit('sortQuery', payload)
   }
 }
@@ -54,17 +53,20 @@ export const getters = {
         row['map'].indexOf(state.filterQuery.label) !== -1
       })
     }
+    
+    if(state.sort.asc !== 0){
+      const dataSorted = data.slice().sort((first, second) => {
+        if (first[state.sort.target] > second[state.sort.target]){
+          return state.sort.asc
+        } else if (first[state.sort.target] < second[state.sort.target]){
+          return state.sort.asc * -1
+        } else {
+          return 0
+        }
+      })
+      return dataSorted
+    }
 
-    const dataSorted = data.slice().sort((first, second) => {
-      if (first[state.sort.target] > second[state.sort.target]){
-        return state.sort.asc
-      }else if (first[state.sort.target] < second[state.sort.target]){
-        return state.sort.asc * -1
-      }else{
-        return 0;
-      }
-    })
-
-    return dataSorted
+    return data
   }
 }

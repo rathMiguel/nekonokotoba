@@ -6,6 +6,7 @@
     .controller__search
       input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="handleChangeQuery").input-full
   .table-wrap
+    //- pre {{ $store.state.june2022.sort }}
     table.table
       thead
         tr
@@ -67,7 +68,7 @@ export default {
       ],
       sort: {
         target: '',
-        asc: 1
+        asc: 0
       },
       filterQuery: {
         label: ''
@@ -89,12 +90,19 @@ export default {
       this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
     },
     sortQuery (value) {
-      this.sort.target =  value
-      if(this.sort.asc === 1 && this.sort.target === value) {
-        this.sort.asc = -1
-      } else {
-        this.sort.asc = 1
+      switch (this.sort.asc) {
+        case 0: this.sort.asc = 1
+          break
+        case 1: this.sort.asc = -1
+          break
+        case -1: this.sort.asc = 0
+          break
+        default: this.sort.asc = 0
+          break
       }
+      
+      if(this.sort.target !== value) this.sort.asc = 1
+      this.sort.target = value
       this.$store.dispatch('june2022/sortQueryAction', this.sort)
     }
   }
