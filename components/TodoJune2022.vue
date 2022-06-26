@@ -9,22 +9,13 @@
     table.table
       thead
         tr
-          th(v-on:click="sortQuery('todo')").sortable ToDo
-            font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== -1}").icon.sortable-up
-            font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'todo' && sort.asc !== 1}").icon.sortable-down
-          th 討伐対象
-          th(v-on:click="sortQuery('baseexp')").sortable 報酬Exp
-            font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== -1}").icon.sortable-up
-            font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'baseexp' && sort.asc !== 1}").icon.sortable-down
-          th(v-on:click="sortQuery('point')").sortable 報酬Bポイント
-            font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== -1}").icon.sortable-up
-            font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'point' && sort.asc !== 1}").icon.sortable-down
-          th(v-on:click="sortQuery('lv')").sortable Lv
-            font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== -1}").icon.sortable-up
-            font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === 'lv' && sort.asc !== 1}").icon.sortable-down
-          th 生息MAP
+          template(v-for="value in tabaleHeadings")
+            th(v-on:click="sortQuery(value.label)" v-if="value.sortable").sortable {{ value.title }}
+              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === value.label && sort.asc === 1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === value.label && sort.asc === -1}").icon.sortable-down
+            th(v-else v-text="value.title")
       tbody
-        template(v-for="value, index in $store.getters['june2022/filteredTasks']")
+        template(v-for="value in $store.getters['june2022/filteredTasks']")
           tr(:class="(value.todo === true) ? 'is-ended' : ''" v-on:click="doneTask(value)")
             td.centered
               font-awesome-icon(:icon="['far', 'square']" v-if="value.todo === false").icon-check.check-true
@@ -42,6 +33,38 @@ import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
+      tabaleHeadings: [
+        {
+          label: 'todo',
+          title: 'ToDo',
+          sortable: true
+        },
+        {
+          label: 'label',
+          title: '討伐対象',
+          sortable: false
+        },
+        {
+          label: 'baseexp',
+          title: '報酬Exp',
+          sortable: true
+        },
+        {
+          label: 'point',
+          title: '報酬Bポイント',
+          sortable: true
+        },
+        {
+          label: 'lv',
+          title: 'Lv',
+          sortable: true
+        },
+        {
+          label: 'map',
+          title: '生息MAP',
+          sortable: false
+        }
+      ],
       sort: {
         target: '',
         asc: 1
