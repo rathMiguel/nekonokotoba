@@ -74,11 +74,6 @@ export default {
       }
     }
   },
-  computed: {
-    ...mapGetters('todo', [
-      'filteredTasks'
-    ])
-  },
   mounted() {
     this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
     this.$store.dispatch('june2022/sortQueryAction', this.sort)
