@@ -64,8 +64,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/gtm'
   ],
+
+  gtm: {
+    id: process.env.GTMID
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
