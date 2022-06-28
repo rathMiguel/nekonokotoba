@@ -2,7 +2,9 @@ const solid = [
   'faAngleUp',
   'faAngleRight',
   'faAngleDown',
-  'faAngleLeft'
+  'faAngleLeft',
+  'faCaretUp',
+  'faCaretDown',
 ]
 
 const regular = [

@@ -12,8 +12,8 @@
         tr
           template(v-for="value in tabaleHeadings")
             th(v-on:click="sortQuery(value.label)" v-if="value.sortable").sortable {{ value.title }}
-              font-awesome-icon(:icon="['fas', 'angle-up']" :class="{'nonactive' : sort.target === value.label && sort.asc === 1}").icon.sortable-up
-              font-awesome-icon(:icon="['fas', 'angle-down']" :class="{'nonactive' : sort.target === value.label && sort.asc === -1}").icon.sortable-down
+              font-awesome-icon(:icon="['fas', 'caret-up']" :class="{'nonactive' : sort.target === value.label && sort.asc === 1}").icon.sortable-up
+              font-awesome-icon(:icon="['fas', 'caret-down']" :class="{'nonactive' : sort.target === value.label && sort.asc === -1}").icon.sortable-down
             th(v-else v-text="value.title")
       tbody
         template(v-for="value in $store.getters['june2022/filteredTasks']")
@@ -174,17 +174,17 @@ export default {
   .sortable-down{
     position: absolute;
     right: 0.5em;
-    opacity: 0.85;
+    color: $color-secondary;
     &.nonactive{
       opacity: 0.3;
     }
   }
 
   .sortable-up{
-    bottom: calc(50% - 1px);
+    bottom: calc(50% - 2px);
   }
   .sortable-down{
-    top: calc(50% - 1px);
+    top: calc(50% - 2px);
   }
 
   .centered{

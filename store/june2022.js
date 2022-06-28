@@ -12,7 +12,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  updateTodo: (state, payload) => {
+  updateTodo (state, payload) {
     const result = state.todos.findIndex((value) => value.id === payload)
     state.todos[result].todo = state.todos[result].todo ? false : true
   },
@@ -21,11 +21,11 @@ export const mutations = {
       element.todo = false
     })
   },
-  setFilterQuery(state, filterQuery) {
-    state.filterQuery = {...filterQuery}
+  setFilterQuery(state, query) {
+    state.filterQuery = { ...query }
   },
-  sortQuery (state, sortQuery) {
-    state.sort = {...sortQuery}
+  sortQuery (state, query) {
+    state.sort = { ...query }
   }
 }
 
@@ -47,6 +47,7 @@ export const actions = {
 export const getters = {
   filteredTasks (state) {
     let data = state.todos
+    
     if (state.filterQuery.label !== '') {
       data = data.filter((row) => {
         return row['label'].indexOf(state.filterQuery.label) !== -1 ||
