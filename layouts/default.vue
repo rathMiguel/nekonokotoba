@@ -12,6 +12,7 @@
 
 @use '~/assets/scss/buttons' as button;
 @use '~/assets/scss/form' as form;
+@use '~/assets/scss/blog' as blog;
 
 body {
   font-family: $ja_go;
@@ -92,4 +93,5 @@ img{
     display: none;
   }
 }
+
 </style>

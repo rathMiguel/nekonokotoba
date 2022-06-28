@@ -1,14 +1,13 @@
 <template lang="pug">
 div
   .main-header
-    h1 LoveLoveWedding大作戦2022 討伐リスト
+    h1 {{ meta.title }}
   .main-content
     client-only(placeholder="Loading...")
       TodoJune2022
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import Meta from '~/plugins/meta'
 
 export default {
