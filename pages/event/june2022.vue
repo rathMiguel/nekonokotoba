@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .main-header
-    h1 {{ meta.title }}
+    h1 LoveLoveWedding大作戦2022 討伐リスト
   .main-content
     client-only(placeholder="Loading...")
       TodoJune2022

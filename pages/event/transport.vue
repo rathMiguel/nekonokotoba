@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .main-header
-    h1 {{ meta.title }}
+    h1 イベントホール　特殊転送先リスト
   .main-content
     article.article-blog
       .eyecatch: img(src="~/assets/images/transport.jpg" alt="")
