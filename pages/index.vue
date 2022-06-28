@@ -13,9 +13,6 @@ export default {
         type: 'website',
         url: `${process.env.BASEURL}/event/june2022/`,
         image: `${process.env.BASEURL}/ogp.png`
-      },
-      filterQuery: {
-        label: ''
       }
     }
   }
