@@ -1,7 +1,6 @@
 <template lang="pug">
 div
-  .main-header
-    h1 LoveLoveWedding大作戦2022 討伐リスト
+  MainHeader(h1='LoveLoveWedding大作戦2022 討伐リスト')
   .main-content
     client-only(placeholder="Loading...")
       TodoJune2022
@@ -25,21 +24,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@use '~/assets/scss/settings' as *;
-@use '~/assets/scss/mixins' as *;
-
-.main-header{
-  margin-bottom: 40px;
-  line-height: 1.5;
-  h1{
-    @include media(sm){
-      font-size: 1.6em;
-    }
-    @include media(md){
-      font-size: 1.8em;
-    }
-  }
-}
-</style>

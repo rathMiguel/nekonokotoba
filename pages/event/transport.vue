@@ -1,10 +1,9 @@
 <template lang="pug">
 div
-  .main-header
-    h1 イベントホール　特殊転送先リスト
+  MainHeader(h1="イベントホール　特殊転送先リスト")
+  ContentEyecatch(name="transport.jpg")
   .main-content
     article.article-blog
-      .eyecatch: img(src="~/assets/images/transport.jpg" alt="")
       h2 特殊転送01
       ul
         li ジュノーフィールド 06
@@ -92,17 +91,4 @@ export default {
 <style lang="scss" scoped>
 @use '~/assets/scss/settings' as *;
 @use '~/assets/scss/mixins' as *;
-
-.main-header{
-  margin-bottom: 40px;
-  line-height: 1.5;
-  h1{
-    @include media(sm){
-      font-size: 1.6em;
-    }
-    @include media(md){
-      font-size: 1.8em;
-    }
-  }
-}
 </style>

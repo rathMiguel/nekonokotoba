@@ -6,18 +6,6 @@
 .article-blog{
   color:#2c3e50;
 
-  .eyecatch{
-    margin-bottom: 1.8em;
-    img{
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      @include media(sm){
-        height: 150px;
-      }
-    }
-  }
-
   h2{
     font-size: 1.4em;
     border-bottom: 1px solid #bdc3c7;
