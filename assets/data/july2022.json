@@ -1,0 +1,461 @@
+[
+  {
+    "id": 1,
+    "todo": false,
+    "label": "メロン 5体",
+    "baseexp": 1000000000,
+    "point": 1000,
+    "lv": null,
+    "map": null
+  },
+  {
+    "id": 2,
+    "todo": false,
+    "label": "ミニメロリン 5体",
+    "baseexp": 1000000000,
+    "point": 1000,
+    "lv": null,
+    "map": null
+  },
+  {
+    "id": 3,
+    "todo": false,
+    "label": "堕メロリン 5体",
+    "baseexp": 1000000000,
+    "point": 1000,
+    "lv": null,
+    "map": null
+  },
+  {
+    "id": 4,
+    "todo": false,
+    "label": "ウォーターメロン 5体",
+    "baseexp": 1000000000,
+    "point": 1000,
+    "lv": null,
+    "map": null
+  },
+  {
+    "id": 5,
+    "todo": false,
+    "label": "暴走した船長ペルロック 1体",
+    "baseexp": 4750000,
+    "point": 1000,
+    "lv": 70,
+    "map": "飛行船襲撃"
+  },
+  {
+    "id": 6,
+    "todo": false,
+    "label": "大長老アイリン 1体",
+    "baseexp": 4750000,
+    "point": 1000,
+    "lv": 85,
+    "map": "サラの記憶"
+  },
+  {
+    "id": 7,
+    "todo": false,
+    "label": "セリーヌ・キミ 1体",
+    "baseexp": 22500000,
+    "point": 1000,
+    "lv": 110,
+    "map": "ホラーおもちゃ工場"
+  },
+  {
+    "id": 8,
+    "todo": false,
+    "label": "真化エレメス(中級) 1体",
+    "baseexp": 4750000,
+    "point": 1000,
+    "lv": 90,
+    "map": "LOVA"
+  },
+  {
+    "id": 9,
+    "todo": false,
+    "label": "暴虐のシーラカンス 1体",
+    "baseexp": 22500000,
+    "point": 1000,
+    "lv": 90,
+    "map": "マラン上級"
+  },
+  {
+    "id": 10,
+    "todo": false,
+    "label": "魔神の巨影 1体",
+    "baseexp": 22500000,
+    "point": 1000,
+    "lv": 70,
+    "map": "魔神の塔"
+  },
+  {
+    "id": 11,
+    "todo": false,
+    "label": "チャールストン3号 1体",
+    "baseexp": 22500000,
+    "point": 1000,
+    "lv": 100,
+    "map": "チャールストン工場"
+  },
+  {
+    "id": 12,
+    "todo": false,
+    "label": "呪いの根源 1体",
+    "baseexp": 4750000,
+    "point": 1000,
+    "lv": 100,
+    "map": "呪いの剣士"
+  },
+  {
+    "id": 13,
+    "todo": false,
+    "label": "頭領タコ 1体",
+    "baseexp": 4750000,
+    "point": 1000,
+    "lv": 0,
+    "map": "暴窟王の洞窟"
+  },
+  {
+    "id": 14,
+    "todo": false,
+    "label": "fff・ジターバグ 1体",
+    "baseexp": 22500000,
+    "point": 1000,
+    "lv": 96,
+    "map": "ジタバグ"
+  },
+  {
+    "id": 15,
+    "todo": false,
+    "label": "死神アンク 1体",
+    "baseexp": 155000000,
+    "point": 1250,
+    "lv": 140,
+    "map": "ビオスの島"
+  },
+  {
+    "id": 16,
+    "todo": false,
+    "label": "S・J・アーネストウルフ 1体",
+    "baseexp": 260000000,
+    "point": 1250,
+    "lv": 150,
+    "map": "空中要塞"
+  },
+  {
+    "id": 17,
+    "todo": false,
+    "label": "イーブル 1体",
+    "baseexp": 2600000000,
+    "point": 1250,
+    "lv": 160,
+    "map": "ハートハンター軍事基地"
+  },
+  {
+    "id": 18,
+    "todo": false,
+    "label": "アムダライス 1体",
+    "baseexp": 85000000,
+    "point": 1250,
+    "lv": 130,
+    "map": "古のグラストヘイム"
+  },
+  {
+    "id": 19,
+    "todo": false,
+    "label": "魔眼のアムダライス 1体",
+    "baseexp": 85000000,
+    "point": 1250,
+    "lv": 130,
+    "map": "古のグラストヘイム（ハード）"
+  },
+  {
+    "id": 20,
+    "todo": false,
+    "label": "ビジョウ 1体",
+    "baseexp": 2600000000,
+    "point": 1250,
+    "lv": 160,
+    "map": "過去の儀式の間"
+  },
+  {
+    "id": 21,
+    "todo": false,
+    "label": "サラの幻影 1体",
+    "baseexp": 45000000,
+    "point": 1250,
+    "lv": 120,
+    "map": "フェンリルとサラ"
+  },
+  {
+    "id": 22,
+    "todo": false,
+    "label": "ダークフェイスワーム 3体",
+    "baseexp": 155000000,
+    "point": 1250,
+    "lv": 140,
+    "map": "フェイスワームの巣"
+  },
+  {
+    "id": 23,
+    "todo": false,
+    "label": "T_W_O 1体",
+    "baseexp": 155000000,
+    "point": 1250,
+    "lv": 140,
+    "map": "最後の部屋"
+  },
+  {
+    "id": 24,
+    "todo": false,
+    "label": "セドラ 35体",
+    "baseexp": 22500000,
+    "point": 1250,
+    "lv": 100,
+    "map": "イズルード海底都市"
+  },
+  {
+    "id": 25,
+    "todo": false,
+    "label": "不死の軍団兵 25体",
+    "baseexp": 22500000,
+    "point": 1250,
+    "lv": 70,
+    "map": "侵攻されたプロンテラ"
+  },
+  {
+    "id": 26,
+    "todo": false,
+    "label": "コヨーテ 30体",
+    "baseexp": 85000000,
+    "point": 1250,
+    "lv": 130,
+    "map": "キワワ砂漠"
+  },
+  {
+    "id": 27,
+    "todo": false,
+    "label": "カニバラウス 20体",
+    "baseexp": 2600000000,
+    "point": 1250,
+    "lv": 160,
+    "map": "ロックリッジ地下街"
+  },
+  {
+    "id": 28,
+    "todo": false,
+    "label": "トップラウンドライダー 20体",
+    "baseexp": 2600000000,
+    "point": 1250,
+    "lv": 160,
+    "map": "ロックリッジ鉱山"
+  },
+  {
+    "id": 29,
+    "todo": false,
+    "label": "フレイムゴーレム 10体",
+    "baseexp": 155000000,
+    "point": 1250,
+    "lv": 140,
+    "map": "フレイムヴァレー"
+  },
+  {
+    "id": 30,
+    "todo": false,
+    "label": "呪いを呑み込んだ王 1体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "EDDAGH"
+  },
+  {
+    "id": 31,
+    "todo": false,
+    "label": "レッドペッパーカッパ 1体",
+    "baseexp": 12000000000,
+    "point": 1500,
+    "lv": 175,
+    "map": "保安区域"
+  },
+  {
+    "id": 32,
+    "todo": false,
+    "label": "EL-A17T 1体",
+    "baseexp": 8000000000,
+    "point": 1500,
+    "lv": 175,
+    "map": "コルメモ"
+  },
+  {
+    "id": 33,
+    "todo": false,
+    "label": "シルヴァパピリア 1体",
+    "baseexp": 16000000000,
+    "point": 1500,
+    "lv": 180,
+    "map": "水上植物園"
+  },
+  {
+    "id": 34,
+    "todo": false,
+    "label": "無名のソードマン(戦闘モード)(MVP) 1体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "EDDA戦闘モード"
+  },
+  {
+    "id": 35,
+    "todo": false,
+    "label": "自動お掃除機オメガ 3体",
+    "baseexp": 2600000000,
+    "point": 1500,
+    "lv": 165,
+    "map": "バルムント庭園"
+  },
+  {
+    "id": 36,
+    "todo": false,
+    "label": "下水クランプ 20体",
+    "baseexp": 2600000000,
+    "point": 1500,
+    "lv": 165,
+    "map": "バルムン下水"
+  },
+  {
+    "id": 37,
+    "todo": false,
+    "label": "解放された魔力 25体",
+    "baseexp": 2600000000,
+    "point": 1500,
+    "lv": 165,
+    "map": "第1魔力発電所"
+  },
+  {
+    "id": 38,
+    "todo": false,
+    "label": "プラガ 15体",
+    "baseexp": 8000000000,
+    "point": 1500,
+    "lv": 175,
+    "map": "ルドゥス"
+  },
+  {
+    "id": 39,
+    "todo": false,
+    "label": "変種ツイン・カプトゥ 45体",
+    "baseexp": 8000000000,
+    "point": 1500,
+    "lv": 175,
+    "map": "ルドゥス"
+  },
+  {
+    "id": 40,
+    "todo": false,
+    "label": "古のウータンシューター 15体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "ILコモド"
+  },
+  {
+    "id": 41,
+    "todo": false,
+    "label": "怨恨のボンゴン 35体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "ILフェイヨン"
+  },
+  {
+    "id": 42,
+    "todo": false,
+    "label": "鋭いアイシクル 5体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "IL氷"
+  },
+  {
+    "id": 43,
+    "todo": false,
+    "label": "青色のベアドール 20体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "ILアイン"
+  },
+  {
+    "id": 44,
+    "todo": false,
+    "label": "安らぎを奪われし亡者 20体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "ILゲフェン"
+  },
+  {
+    "id": 45,
+    "todo": false,
+    "label": "不吉なPタートル 5体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "IL亀"
+  },
+  {
+    "id": 46,
+    "todo": false,
+    "label": "混沌のハンターフライ 10体",
+    "baseexp": 4000000000,
+    "point": 1500,
+    "lv": 170,
+    "map": "ILプロ北"
+  },
+  {
+    "id": 47,
+    "todo": false,
+    "label": "汚染されたレイドリックA 10体",
+    "baseexp": 8000000000,
+    "point": 2000,
+    "lv": 175,
+    "map": "GHアビス"
+  },
+  {
+    "id": 48,
+    "todo": false,
+    "label": "グリーンピタヤ 5体",
+    "baseexp": 0,
+    "point": 2000,
+    "lv": 185,
+    "map": "ピタヤ"
+  },
+  {
+    "id": 49,
+    "todo": false,
+    "label": "呪われたレイドリック 5体",
+    "baseexp": 0,
+    "point": 2000,
+    "lv": 185,
+    "map": "GHC"
+  },
+  {
+    "id": 50,
+    "todo": false,
+    "label": "デカメロリン 1体",
+    "baseexp": 8000000000,
+    "point": 2000,
+    "lv": null,
+    "map": null
+  },
+  {
+    "id": 51,
+    "todo": false,
+    "label": "デカ堕メロリン 1体",
+    "baseexp": 8000000000,
+    "point": 2000,
+    "lv": null,
+    "map": null
+  }
+]

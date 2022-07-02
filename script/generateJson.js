@@ -47,8 +47,8 @@ const dataList = (url) => {
           outputData.push(dataBlock)
         }
       })
-      
       writeFile(value.properties.title, outputData)
+      console.log(`generated data "./assets/data/${value.properties.title}.json"`)
     })()
   })
 })()
@@ -61,9 +61,9 @@ const convertToKeys = (list) => {
 }
 
 const writeFile = (name, data) => {
-  fs.writeFileSync(`./assets/data/${name}.json`, JSON.stringify(data, null, '  '), 'utf-8', (err) => {
-    if(err) {
-      console.log(err)
+  fs.writeFileSync(`./assets/data/${name}.json`, JSON.stringify(data, null, '  '), 'utf-8', (error) => {
+    if(error) {
+      console.log(error)
     }
   })
 }
