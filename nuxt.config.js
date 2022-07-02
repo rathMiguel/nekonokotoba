@@ -57,7 +57,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module',
     ['@nuxtjs/fontawesome', { component: 'fontAwesome', suffix: true }],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/image'
   ],
 
   webfontloader: {
@@ -68,7 +69,7 @@ export default {
       ]
     }
   },
-
+  
   pwa: {
     icon: {
       source: 'icon_pwa.png',

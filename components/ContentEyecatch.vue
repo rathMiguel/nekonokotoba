@@ -1,6 +1,9 @@
 <template lang="pug">
   .eyecatch
-    img(:src="require(`~/assets/images/${name}`)" alt="")
+    picture
+      source(:srcset="getSrc(`/images/eyecatch/${name}`, 'webp')" type="image/webp")
+      source(:srcset="getSrc(`/images/eyecatch/${name}`, 'jpg')" type="image/jpeg")
+      nuxt-img(:src="`/images/eyecatch/${name}`" height=250)
 </template>
 
 <script>
@@ -9,6 +12,15 @@ export default {
     name: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    getSrc(src, format) {
+      const imgUrl = this.$img(src, {
+        format: format,
+        quality: 70
+      })
+      return imgUrl
     }
   }
 }
