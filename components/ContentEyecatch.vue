@@ -3,7 +3,7 @@
     picture
       source(:srcset="getSrc(`/images/eyecatch/${name}`, 'webp')" type="image/webp")
       source(:srcset="getSrc(`/images/eyecatch/${name}`, 'jpg')" type="image/jpeg")
-      nuxt-img(:src="`/images/eyecatch/${name}`" height=250)
+      nuxt-img(:src="`/images/eyecatch/${name}`" height=250 preload decoding="async")
 </template>
 
 <script>
