@@ -55,7 +55,6 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    // '@nuxtjs/eslint-module',
     ['@nuxtjs/fontawesome', { component: 'fontAwesome', suffix: true }],
     '@nuxtjs/pwa',
     '@nuxt/image'
