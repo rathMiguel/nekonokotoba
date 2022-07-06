@@ -4,7 +4,7 @@
     .controller__buttons
       button(v-on:click="resetTask()").button.button-primary 全てのチェックを外す
     .controller__search
-      input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="handleChangeQuery").input-full
+      input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="changeQuery()").input-full
   .table-wrap
     //- pre {{ $store.state.june2022.sort }}
     table.table
@@ -74,28 +74,32 @@ export default {
     }
   },
   mounted() {
-    this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
+    this.$store.dispatch('june2022/filterQueryAction', this.filterQuery)
     this.$store.dispatch('june2022/sortQueryAction', this.sort)
   },
   methods: {
     doneTask (value) {
-      this.$store.dispatch('june2022/todoCheckAction', value.id)
+      this.$store.dispatch('june2022/doneTodoAction', value.id)
     },
     resetTask () {
-      this.$store.dispatch('june2022/resetTodosAction')
+      this.$store.dispatch('june2022/resetTodoAction')
     },
-    handleChangeQuery () {
-      this.$store.dispatch('june2022/setFilterQueryAction', this.filterQuery)
+    changeQuery () {
+      this.$store.dispatch('june2022/filterQueryAction', this.filterQuery)
     },
     sortQuery (value) {
       switch (this.sort.asc) {
-        case 0: this.sort.asc = 1
+        case 0:
+          this.sort.asc = 1
           break
-        case 1: this.sort.asc = -1
+        case 1:
+          this.sort.asc = -1
           break
-        case -1: this.sort.asc = 0
+        case -1:
+          this.sort.asc = 0
           break
-        default: this.sort.asc = 0
+        default:
+          this.sort.asc = 0
           break
       }
       

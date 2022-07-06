@@ -12,7 +12,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  updateTodo (state, payload) {
+  doneTodo (state, payload) {
     const result = state.todos.findIndex((value) => value.id === payload)
     state.todos[result].todo = state.todos[result].todo ? false : true
   },
@@ -21,7 +21,7 @@ export const mutations = {
       element.todo = false
     })
   },
-  setFilterQuery(state, query) {
+  filterQuery(state, query) {
     state.filterQuery = { ...query }
   },
   sortQuery (state, query) {
@@ -30,14 +30,14 @@ export const mutations = {
 }
 
 export const actions = {
-  todoCheckAction (context, payload) {
-    context.commit('updateTodo', payload)
+  doneTodoAction (context, payload) {
+    context.commit('doneTodo', payload)
   },
-  resetTodosAction (context) {
+  resetTodoAction (context) {
     context.commit('resetTodo')
   },
-  setFilterQueryAction (context, payload) {
-    context.commit('setFilterQuery', payload)
+  filterQueryAction (context, payload) {
+    context.commit('filterQuery', payload)
   },
   sortQueryAction (context, payload) {
     context.commit('sortQuery', payload)
