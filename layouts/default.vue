@@ -23,6 +23,8 @@ body {
   font-size: $fz-default;
   line-height: 1.85;
   background-color: #F6F6F6;
+  font-weight: 500;
+  -webkit-font-smoothing: subpixel-antialiased;
   @include media(sm){
     line-height: 1.7;
   }

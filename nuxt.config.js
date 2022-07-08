@@ -63,7 +63,6 @@ export default {
   webfontloader: {
     google: {
       families: [
-        'Noto+Sans+JP:400,700',
         'Karla'
       ]
     }
