@@ -9,7 +9,7 @@
     p: nuxt-link(to="#supplement") ※各メロンの出現場所は表下参照
   .table-wrap
     //- pre {{ $store.state.june2022.sort }}
-    table.table
+    table.table.todo.striped
       thead
         tr
           template(v-for="value in tabaleHeadings")

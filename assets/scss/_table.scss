@@ -17,29 +17,18 @@
   @include media(sm-md){
     width: 800px;
   }
-  tr{
-    background-color: #fff;
-    &:nth-child(even){
-      background-color: #EEE;
-    }
-  }
   th, td{
     padding: 13px 10px;
+    white-space: pre-wrap;
   }
 
   thead{
     tr{
-      background-color: $color-primary;
+      background-color: $color-primary !important;
       color: #FFF;
     }
     th, td{
       white-space: nowrap;
-    }
-  }
-
-  tbody{
-    tr{
-      cursor: pointer;
     }
   }
 
@@ -86,5 +75,22 @@
     &.check-false{
       color: darken($color-caution, 40%);
     }
+  }
+
+  &.striped{
+    tr{
+      background-color: #fff;
+      &:nth-child(even){
+        background-color: #F9F9F9;
+      }
+    }
+  }
+
+  &.todo{
+    tbody{
+      tr{
+        cursor: pointer;
+      }
+    }  
   }
 }

@@ -7,7 +7,7 @@
       input(type="text" placeholder="キーワードで絞り込み" v-model="filterQuery.label" v-on:keyup="changeQuery()").input-full
   .table-wrap
     //- pre {{ $store.state.june2022.sort }}
-    table.table
+    table.table.todo.striped
       thead
         tr
           template(v-for="value in tabaleHeadings")
