@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.controllers{
+  margin-top: 1.5em;
+  & > * {
+    margin-bottom: 15px;
+  }
+
+  .controller{
+    &__buttons{
+      text-align: right;
+    }
+  }
+}

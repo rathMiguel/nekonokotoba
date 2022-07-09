@@ -5,8 +5,8 @@
     "label": "メロン 5体",
     "baseexp": 1000000000,
     "point": 1000,
-    "lv": null,
-    "map": null
+    "lv": "",
+    "map": "メロンフェスタ会場"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "label": "ミニメロリン 5体",
     "baseexp": 1000000000,
     "point": 1000,
-    "lv": null,
-    "map": null
+    "lv": "",
+    "map": "※下表参照"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "label": "堕メロリン 5体",
     "baseexp": 1000000000,
     "point": 1000,
-    "lv": null,
-    "map": null
+    "lv": "",
+    "map": "※下表参照"
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "label": "ウォーターメロン 5体",
     "baseexp": 1000000000,
     "point": 1000,
-    "lv": null,
-    "map": null
+    "lv": "",
+    "map": "※下表参照"
   },
   {
     "id": 5,
