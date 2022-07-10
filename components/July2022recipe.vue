@@ -3,8 +3,6 @@
   .controllers
     .controller__search
       input(type="text" placeholder="アイテム名で絞り込み" v-model="filterQuery.label" v-on:keyup="changeQuery()").input-full
-  //- pre {{ $store.state.july2022drop.filterQuery }}
-
   .post-block(v-for="item in $store.getters['july2022recipe/getFilteredItems']")
     h3.title-bordered {{ item.title }}
     Note(v-if="item.title === 'メロン系武器'")
@@ -12,12 +10,12 @@
       p 作成したいメロン武器と同じ系統の武器が必要になります。
       p 例：メロンメイスを作成する場合→ディーヴァメイス or ミラージュメイス or アビスメイス
     .table-wrap
-      table.table
+      table.table.striped
         thead
           tr
             th 材料アイテム
             th 個数
-            th MEMO
+            th メモ
         tbody
           tr(v-for="material in $store.getters['july2022recipe/getFilterdMaterials'](item.item_id)" :class="colorPriority[material.pattern]")
             td {{ material.item }}
@@ -59,8 +57,24 @@ export default {
 @use '~/assets/scss/table';
 
 .table{
-  &.fixed{
-    table-layout: fixed;
+  thead{
+    th{
+      &:nth-child(1){
+        @include media(lg){
+          width: 40%;
+        }
+      }
+      &:nth-child(2){
+        @include media(lg){
+          width: 20%;
+        }
+      }
+      &:nth-child(3){
+        @include media(lg){
+          width: 40%;
+        }
+      }
+    }
   }
 
   tr{
@@ -82,6 +96,7 @@ export default {
         background-color: lighten(#DCEDC8, 3);
       }
     }
+    
   }
 }
 

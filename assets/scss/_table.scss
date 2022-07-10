@@ -14,6 +14,8 @@
   margin-bottom: 1.5em;
   font-size: 14px;
   line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #CCC;
   @include media(sm-md){
     width: 800px;
   }

@@ -3,11 +3,10 @@
   .controllers
     .controller__search
       input(type="text" placeholder="アイテム名で絞り込み" v-model="filterQuery.label" v-on:keyup="changeQuery()").input-full
-  //- pre {{ $store.state.july2022drop.filterQuery }}
   .post-block(v-for="item in $store.getters['july2022drop/getFilteredItems']")
     h3.title-bordered {{ item.title }}
     .table-wrap
-      table.table.fixed
+      table.table.fixed.striped
         thead
           tr
             th ドロップするモンスター

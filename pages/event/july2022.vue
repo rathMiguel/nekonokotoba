@@ -2,11 +2,8 @@
 div
   MainHeader(h1='ゲフェンメロンフェスタ2022 討伐リスト')
   .main-content
-    //- client-only(placeholder="Loading...")
-      TodoJuly2022
     client-only(placeholder="Loading...")
-      //- July2022drop
-      July2022recipe
+      TodoJuly2022
 </template>
 
 <script>
