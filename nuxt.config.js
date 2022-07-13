@@ -46,7 +46,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filter.js',
-    // { src: '~/plugins/persistedstate.js', ssr: false }
+    { src: '~/plugins/persistedstate.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
