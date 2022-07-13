@@ -1,10 +1,15 @@
-<template lang="pug"></template>
-
+<template lang="pug">
+.main
+  Mainimage
+  News
+  Social
+</template>
+  
 <script>
 import Meta from '~/plugins/meta'
 
 export default {
-  mixins: [Meta],
+  mixins: [ Meta ],
   data() {
     return {
       meta: {

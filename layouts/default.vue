@@ -49,10 +49,10 @@ p{
 
 main{
   display: block;
-  padding: 30px;
+  padding: $content-gap;
   margin-left: $nav-width;
   @include media(sm){
-    padding: 15px;
+    padding: $content-gap-sm;
     padding-top: 68px;
     margin-left: 0;
   }
