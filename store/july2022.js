@@ -50,8 +50,8 @@ export const getters = {
     
     if (state.filterQuery.label !== '') {
       data = data.filter((row) => {
-        return row['label'].indexOf(state.filterQuery.label) !== -1 ||
-        row['map'].indexOf(state.filterQuery.label) !== -1
+        return String(row['label']).indexOf(state.filterQuery.label) !== -1 ||
+        String(row['map']).indexOf(state.filterQuery.label) !== -1
       })
     }
     

@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "gen:data": "node script/generateJson.js"
+    "gen:data": "node script/generateJson.js",
+    "debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt"
   },
   "dependencies": {
     "core-js": "^3.23.4",
