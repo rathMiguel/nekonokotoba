@@ -55,6 +55,23 @@ export default {
               map: '',
               detail: ''
             }
+          ],
+          delivary: [
+            {
+              level: 'easy',
+              item_id: '',
+              item_name: ''
+            },
+            {
+              level: 'normal',
+              item_id: '',
+              item_name: ''
+            },
+            {
+              level: 'hard',
+              item_id: '',
+              item_name: ''
+            }
           ]
         }
       ]
