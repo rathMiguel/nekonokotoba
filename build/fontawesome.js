@@ -5,6 +5,7 @@ const solid = [
   'faAngleLeft',
   'faCaretUp',
   'faCaretDown',
+  'faMagnifyingGlass'
 ]
 
 const regular = [
