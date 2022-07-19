@@ -64,7 +64,7 @@ export default {
             },
             {
               level: 'Hard',
-              item_id: 2572,
+              item_id: 25772,
               item_name: '美味しい果汁',
               amount: 15
             },
