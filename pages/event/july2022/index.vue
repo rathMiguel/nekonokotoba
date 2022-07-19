@@ -12,15 +12,11 @@ div
         h2 会場への行き方
         .row
           .column.colmn-2
-            .place-block
-              Place(name='202207detail1.jpg' map='202207map1.jpg')
-              .place-caption
-                p プロンテラ（54, 55）
+            Place(name='202207detail1.jpg' map='202207map1.jpg')
+              p プロンテラ（54, 55）
           .column.colmn-2
-            .place-block
-              Place(name='202207detail2.jpg' map='202207map2.jpg')
-              .place-caption
-                p ラザーニャ（325, 210）
+            Place(name='202207detail2.jpg' map='202207map2.jpg')
+              p ラザーニャ（325, 210）
       section.section
         h2 デイリークエスト
         p 1日にやることを纏めました。
@@ -139,13 +135,6 @@ export default {
   @include media(md-lg){
     margin-left: 10px;
     margin-right: 10px;
-  }
-}
-
-.place-caption{
-  margin-top: 5px;
-  p:last-child{
-    margin-bottom: 0;
   }
 }
 

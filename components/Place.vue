@@ -1,25 +1,28 @@
 <template lang="pug">
 .place
-  .place-main
-    .place-map(v-on:click="zoomToggle()" v-if="map")
-      i.icon-zoom: font-awesome-icon(:icon="['fas', 'magnifying-glass']")
-      picture
-        source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
-        source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
-        nuxt-img(:src="`/images/map/${map}`" height=120 width=120 preload decoding="async")
-    .place-detail
-      picture
-        source(:srcset="getSrc(`/images/map/${name}`, 'webp')" type="image/webp")
-        source(:srcset="getSrc(`/images/map/${name}`, 'jpg')" type="image/jpeg")
-        nuxt-img(:src="`/images/map/${name}`" width=1100 preload decoding="async")
-  .place-zoom(v-if="zoom && map")
-    i.place-zoom__layer(v-on:click="zoomClose()")
-    span.place-zoom__photo
-      .place-zoom__close(v-on:click="zoomClose()") 閉じる×
-      picture
-        source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
-        source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
-        nuxt-img(:src="`/images/map/${map}`" width=500 preload decoding="async")
+  .place-wrap
+    .place-main
+      .place-map(v-on:click="zoomToggle()" v-if="map")
+        i.icon-zoom: font-awesome-icon(:icon="['fas', 'magnifying-glass']")
+        picture
+          source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
+          source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
+          nuxt-img(:src="`/images/map/${map}`" height=120 width=120 preload decoding="async")
+      .place-detail
+        picture
+          source(:srcset="getSrc(`/images/map/${name}`, 'webp')" type="image/webp")
+          source(:srcset="getSrc(`/images/map/${name}`, 'jpg')" type="image/jpeg")
+          nuxt-img(:src="`/images/map/${name}`" width=1100 preload decoding="async")
+    .place-zoom(v-if="zoom && map")
+      i.place-zoom__layer(v-on:click="zoomClose()")
+      span.place-zoom__photo
+        .place-zoom__close(v-on:click="zoomClose()") 閉じる×
+        picture
+          source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
+          source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
+          nuxt-img(:src="`/images/map/${map}`" width=500 preload decoding="async")
+  .place-caption
+    slot
 </template>
 
 <script>
@@ -96,6 +99,13 @@ export default {
 .place-detail{
   img{
     width: 100%;
+  }
+}
+
+.place-caption{
+  margin-top: 5px;
+  p:last-child{
+    margin-bottom: 0;
   }
 }
 

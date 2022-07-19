@@ -9,6 +9,7 @@ div
         .daily-lookingfor
           .daily-lookingfor__block(v-for="item in value.lookingfor")
             Place(:name="item.detail" :map="item.map")
+              p {{ item.level }}　{{ item.caption }}
         .daily-outro(v-for="item in value.delivary")
           dl.daily-dl
             dt {{ item.level }}
