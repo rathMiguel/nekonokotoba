@@ -27,7 +27,7 @@ export default {
     return {
       meta: {
         title: `${process.env.BASETITLE}`,
-        description: 'ゲフェンメロンフェスタ2022のデイリークエストまとめています',
+        description: 'ゲフェンメロンフェスタ2022のデイリークエストをまとめています',
         type: 'website',
         url: `${process.env.BASEURL}/`,
         image: `${process.env.BASEURL}/ogp.png`
