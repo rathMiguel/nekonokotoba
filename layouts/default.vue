@@ -41,10 +41,7 @@ a{
 }
 
 p{
-  margin-bottom: 1.85em;
-  @include media(sm){
-    margin-bottom: 1.7em;
-  }
+  margin-bottom: 1.4em;
 }
 
 main{

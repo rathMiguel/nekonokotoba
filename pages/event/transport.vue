@@ -87,8 +87,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@use '~/assets/scss/settings' as *;
-@use '~/assets/scss/mixins' as *;
-</style>

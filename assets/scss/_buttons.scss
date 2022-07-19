@@ -44,3 +44,18 @@
     font-size: 13px;
   }
 }
+
+.button-info{
+  @extend .button;
+  color: #FFF;
+  background-color: $color-primary;
+  min-width: 220px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid $color-primary;
+  @include media(sm){
+    width: 140px;
+    height: 45px;
+    font-size: 13px;
+  }
+}

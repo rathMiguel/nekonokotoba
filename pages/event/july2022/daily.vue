@@ -2,24 +2,22 @@
 div
   MainHeader(h1='ゲフェンメロンフェスタ2022 デイリークエスト')
   .main-content
-    section.daily-section
+    section.daily-section(v-for="value in dailyData")
       header.daily-section__header
-        h2.title-section 2022-01-01
+        h2.title-section {{ value.date }}
       .daily-section__main
-        .daily-lookingfor
+        //- .daily-lookingfor
           .daily-lookingfor__block
             Place(name="sample_detail.jpg" map="sample_map.png")
           .daily-lookingfor__block
             Place(name="sample_detail.jpg" map="sample_map.png")
           .daily-lookingfor__block
             Place(name="sample_detail.jpg" map="sample_map.png")
-        .daily-outro
+        .daily-outro(v-for="item in value.delivary")
           dl.daily-dl
-            dt Inferno
-            dd 討伐募集のチラシ
-          dl.daily-dl
-            dt Inferno
-            dd 討伐募集のチラシ
+            dt {{ item.level }}
+            dd {{ item.item_name }}
+              span.amount {{ item.amount }}個
 </template>
 
 <script>
@@ -58,19 +56,28 @@ export default {
           ],
           delivary: [
             {
-              level: 'easy',
-              item_id: '',
-              item_name: ''
+              level: 'Easy',
+              item_id: 928,
+              item_name: '虫の觸角',
+              amount: '50'
             },
             {
-              level: 'normal',
-              item_id: '',
-              item_name: ''
+              level: 'Normal',
+              item_id: 7119,
+              item_name: '菌糸',
+              amount: '10'
             },
             {
-              level: 'hard',
-              item_id: '',
-              item_name: ''
+              level: 'Hard',
+              item_id: 25258,
+              item_name: '壊れた矢',
+              amount: '30'
+            },
+            {
+              level: 'Inferno',
+              item_id: 25262,
+              item_name: '乾燥したクローバー',
+              amount: '1'
             }
           ]
         }
