@@ -175,6 +175,12 @@ export default {
 @use '~/assets/scss/controllers';
 @use '~/assets/scss/table';
 
+.table-caption{
+  p:last-child{
+    margin-bottom: 0;
+  }
+}
+
 // supply
 
 .supply{

@@ -10,6 +10,7 @@ nav#nav
         font-awesome-icon(:icon="['far', 'flag']").icon
         span.link-text EVENT DATA
       ul
+        li: nuxt-link(to="/event/july2022").link-wrap ゲフェンメロンフェスタ2022
         li: nuxt-link(to="/event/june2022").link-wrap LoveLoveWedding大作戦2022
         li: nuxt-link(to="/event/transport").link-wrap 特殊転送先リスト
     li
