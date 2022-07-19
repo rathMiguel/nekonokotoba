@@ -6,17 +6,14 @@ div
       header.daily-section__header
         h2.title-section {{ value.date }}
       .daily-section__main
-        //- .daily-lookingfor
-          .daily-lookingfor__block
-            Place(name="sample_detail.jpg" map="sample_map.png")
-          .daily-lookingfor__block
-            Place(name="sample_detail.jpg" map="sample_map.png")
-          .daily-lookingfor__block
-            Place(name="sample_detail.jpg" map="sample_map.png")
+        .daily-lookingfor
+          .daily-lookingfor__block(v-for="item in value.lookingfor")
+            Place(:name="item.detail" :map="item.map")
         .daily-outro(v-for="item in value.delivary")
           dl.daily-dl
             dt {{ item.level }}
-            dd {{ item.item_name }}
+            dd
+              a(:href="`https://rotool.gungho.jp/monster/item.php?item=${item.item_id}`" target="_blank") {{ item.item_name }}
               span.amount {{ item.amount }}個
 </template>
 
@@ -39,19 +36,16 @@ export default {
           date: '2022-07-19',
           lookingfor: [
             {
-              level: 'easy',
-              map: '',
-              detail: ''
+              level: 'Normal',
+              map: '202207m011map.jpg',
+              detail: '202207m011detail.jpg',
+              caption: 'コモド'
             },
             {
-              level: 'normal',
-              map: '',
-              detail: ''
-            },
-            {
-              level: 'hard',
-              map: '',
-              detail: ''
+              level: 'Hard',
+              map: '202207m012map.jpg',
+              detail: '202207m012detail.jpg',
+              caption: '名も無き島 修道院3F'
             }
           ],
           delivary: [
@@ -112,6 +106,7 @@ export default {
 
   & > *{
     margin-bottom: 1em;
+    width: 100%;
     @include media(md-lg){
       margin-left: 5px;
       margin-right: 5px;
