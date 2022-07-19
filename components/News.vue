@@ -15,6 +15,11 @@ export default {
     return {
       posts: [
         {
+          date: '2022-07-19',
+          link: '/event/july2022',
+          body: 'ゲフェンメロンフェスタ概要をまとめました'
+        },
+        {
           date: '2022-06-29',
           link: '/event/transport',
           body: 'イベントホールの特殊転送先リストを公開しました'
