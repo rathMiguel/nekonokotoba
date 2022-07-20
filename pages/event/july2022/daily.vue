@@ -6,11 +6,13 @@ div
       header.daily-section__header
         h2.title-section {{ value.date }}
       .daily-section__main
+        h3 迷子探し
         .daily-lookingfor
           .daily-lookingfor__block(v-for="item in value.lookingfor")
             Place(:name="item.detail" :map="item.map")
               p {{ item.level }}　{{ item.caption }}
         .daily-outro(v-for="item in value.delivary")
+          h3 納品
           dl.daily-dl
             dt {{ item.level }}
             dd
@@ -33,6 +35,49 @@ export default {
         image: `${process.env.BASEURL}/ogp.png`
       },
       dailyData: [
+        {
+          date: '2022-07-21',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m031map.jpg',
+              detail: '202207m031detail.jpg',
+              caption: 'ポートマラヤ'
+            },
+            {
+              level: 'Hard',
+              map: '202207m032map.jpg',
+              detail: '202207m032detail.jpg',
+              caption: '実験棟-OPTATIO(verus01)'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 962,
+              item_name: '触手',
+              amount: 10
+            },
+            {
+              level: 'Normal',
+              item_id: 25167,
+              item_name: '古い手紙',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 11620,
+              item_name: 'ベアロピー',
+              amount: 10
+            },
+            {
+              level: 'Inferno',
+              item_id: 25272,
+              item_name: '幻惑の石',
+              amount: 1
+            }
+          ]
+        },
         {
           date: '2022-07-20',
           lookingfor: [
