@@ -17,6 +17,9 @@ div
           .column.colmn-2
             Place(name='202207detail2.jpg' map='202207map2.jpg')
               p ラザーニャ（325, 210）
+          .column.colmn-2
+            Place(name='202207detail3.jpg')
+              p 冒険者アカデミー　教室棟1F
       section.section
         h2 デイリークエスト
         p 1日にやることを纏めました。
