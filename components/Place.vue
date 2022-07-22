@@ -5,14 +5,14 @@
       .place-map(v-on:click="zoomToggle()" v-if="map")
         i.icon-zoom: font-awesome-icon(:icon="['fas', 'magnifying-glass']")
         picture
-          source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
-          source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
+          source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp" height=120 width=120)
+          source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg" height=120 width=120)
           nuxt-img(:src="`/images/map/${map}`" height=120 width=120 preload decoding="async")
       .place-detail
         picture
           source(:srcset="getSrc(`/images/map/${name}`, 'webp')" type="image/webp")
           source(:srcset="getSrc(`/images/map/${name}`, 'jpg')" type="image/jpeg")
-          nuxt-img(:src="`/images/map/${name}`" width=1100 preload decoding="async")
+          nuxt-img(:src="`/images/map/${name}`" width=1000 height=800 preload decoding="async")
     .place-zoom(v-if="zoom && map")
       i.place-zoom__layer(v-on:click="zoomClose()")
       span.place-zoom__photo
@@ -20,7 +20,7 @@
         picture
           source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp")
           source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg")
-          nuxt-img(:src="`/images/map/${map}`" width=500 preload decoding="async")
+          nuxt-img(:src="`/images/map/${map}`" width=500 height=500 preload decoding="async")
   .place-caption
     slot
 </template>
@@ -75,9 +75,12 @@ export default {
   border-left: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
   cursor: pointer;
+  max-width: 150px;
+  width: 25%;
 
   img{
-    width: 120px;
+    max-width: 150px;
+    width: 100%;
   }
 
   .icon-zoom{
