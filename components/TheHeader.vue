@@ -1,9 +1,9 @@
 <template lang="pug">
 header#header
-  i.navbar(v-on:click="navToggle"): img(src="~/assets/images/cat.svg" width=20)
+  i.navbar(v-on:click="navToggle"): nuxt-img(src="/images/cat.svg" width=20 height=23 fit="contain")
   i.nav-layer(v-on:click="navToggle" :class="(isActive === true) ? 'is-active' : ''")
   .header-fixed(:class="(isActive === true) ? 'is-active' : ''")
-    .header-logo: nuxt-link(to="/"): img(src="~/assets/images/logo.svg" alt="" width=150)
+    .header-logo: nuxt-link(to="/"): nuxt-img(src="/images/logo.svg" alt="" width=150 height=62 fit="contain")
     TheNav
 </template>
 

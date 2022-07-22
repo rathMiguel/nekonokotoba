@@ -1,8 +1,8 @@
 <template lang="pug">
 .pr-social
   a(href="https://twitter.com/jukka_tan" target="_blank")
-    nuxt-img(src="/images/social/emo_twitter.png" quality=70).emo-twitter
-    nuxt-img(src="/images/social/chara_jukka.png" quality=70).character-jukka
+    nuxt-img(src="/images/social/emo_twitter.png" quality=70 width=27 height=24).emo-twitter
+    nuxt-img(src="/images/social/chara_jukka.png" quality=70 width=48 height=80).character-jukka
 </template>
 
 <style lang="scss" scoped>
