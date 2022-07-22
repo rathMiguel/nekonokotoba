@@ -3,8 +3,8 @@ section.mainimage
   .mainimage__gallery
     .gallery-block(v-for="name in gallery")
       picture
-        source(:srcset="getSrc(`/images/top/${name}`, 'webp')" type="image/webp")
-        source(:srcset="getSrc(`/images/top/${name}`, 'jpg')" type="image/jpeg")
+        source(:srcset="getSrc(`/images/top/${name}`, 'webp')" type="image/webp" height=300 width=300)
+        source(:srcset="getSrc(`/images/top/${name}`, 'jpg')" type="image/jpeg" height=300 width=300)
         nuxt-img(:src="`/images/top/${name}`" height=300 width=300 preload decoding="async")
   .mainimage__logo
     h1: img(src="~/assets/images/logo_top.svg" alt="猫のことば　研究所")
