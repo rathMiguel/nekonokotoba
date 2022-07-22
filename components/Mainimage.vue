@@ -7,7 +7,7 @@ section.mainimage
         source(:srcset="getSrc(`/images/top/${name}`, 'jpg')" type="image/jpeg" height=300 width=300)
         nuxt-img(:src="`/images/top/${name}`" height=300 width=300 preload decoding="async")
   .mainimage__logo
-    h1: nuxt-img(src="/images/logo_top.svg" alt="猫のことば　研究所" format="svg" fit="contain" width=400 height=135)
+    h1: nuxt-img(src="/images/logo_top.svg" alt="猫のことば　研究所" format="svg" width=400 height=135)
     .mainimage-subtitle
       p ラグナロクオンラインをゆるく研究。
 </template>
