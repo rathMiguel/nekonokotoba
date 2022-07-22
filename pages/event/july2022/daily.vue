@@ -36,6 +36,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-23',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m051map.jpg',
+              detail: '202207m051detail.jpg',
+              caption: '龍之城 室内　入ってからまっすぐ進む'
+            },
+            {
+              level: 'Hard',
+              map: '202207m052map.jpg',
+              detail: '202207m052detail.jpg',
+              caption: 'タートルアイランド3F 真ん中あたり'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 958,
+              item_name: '亡者の牙',
+              amount: 30
+            },
+            {
+              level: 'Normal',
+              item_id: 25276,
+              item_name: '綺麗な骨',
+              amount: 20
+            },
+            {
+              level: 'Hard',
+              item_id: 7096,
+              item_name: '冷めた溶岩',
+              amount: 15
+            },
+            {
+              level: 'Inferno',
+              item_id: 958,
+              item_name: 'マヤーの王冠',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-07-22',
           lookingfor: [
             {
