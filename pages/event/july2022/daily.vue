@@ -72,7 +72,7 @@ export default {
             },
             {
               level: 'Inferno',
-              item_id: 958,
+              item_id: 1000518,
               item_name: 'マヤーの王冠',
               amount: 1
             }
