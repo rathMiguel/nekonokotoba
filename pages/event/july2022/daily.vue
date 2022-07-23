@@ -36,6 +36,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-24',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m061map.jpg',
+              detail: '202207m061detail.jpg',
+              caption: ''
+            },
+            {
+              level: 'Hard',
+              map: '202207m062map.jpg',
+              detail: '202207m062detail.jpg',
+              caption: ''
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 943,
+              item_name: 'けっこうかたい皮',
+              amount: 40
+            },
+            {
+              level: 'Normal',
+              item_id: 25282,
+              item_name: '古いリボルバー',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 25316,
+              item_name: 'ぼろぼろの金属片',
+              amount: 20
+            },
+            {
+              level: 'Inferno',
+              item_id: 7324,
+              item_name: '深海のクラーケンの足',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-07-23',
           lookingfor: [
             {
