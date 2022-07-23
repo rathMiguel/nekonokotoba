@@ -42,13 +42,13 @@ export default {
               level: 'Easy',
               map: '202207m061map.jpg',
               detail: '202207m061detail.jpg',
-              caption: ''
+              caption: 'フィゲル室内'
             },
             {
               level: 'Hard',
               map: '202207m062map.jpg',
               detail: '202207m062detail.jpg',
-              caption: ''
+              caption: 'バリオ・マヒワガ'
             }
           ],
           delivary: [
