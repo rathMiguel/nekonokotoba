@@ -10,9 +10,14 @@ nav#nav
         font-awesome-icon(:icon="['far', 'flag']").icon
         span.link-text EVENT DATA
       ul
-        li: nuxt-link(to="/event/july2022").link-wrap ゲフェンメロンフェスタ2022
-        li: nuxt-link(to="/event/june2022").link-wrap LoveLoveWedding大作戦2022
-        li: nuxt-link(to="/event/transport").link-wrap 特殊転送先リスト
+        li
+          nuxt-link(to="/event/july2022/").link-wrap ゲフェンメロンフェスタ2022
+          ul
+            li: nuxt-link(to="/event/july2022/daily/").link-wrap 納品 / 迷子探し
+            li: nuxt-link(to="/event/july2022/hunt/").link-wrap 討伐リスト
+            li: nuxt-link(to="/event/july2022/recipe/").link-wrap レシピ / 材料リスト
+        li: nuxt-link(to="/event/july2022/transport/").link-wrap 特殊転送先リスト
+        li: nuxt-link(to="/event/").link-wrap 過去イベント
     li
       .link-wrap
         font-awesome-icon(:icon="['far', 'rectangle-list']").icon
@@ -59,6 +64,7 @@ nav#nav
     &:first-child{
       border-top: 1px solid rgba(#FFF, 30%);
     }
+    
     & > ul{
       background-color: $color-primary;
       width: $nav-width;
@@ -72,6 +78,35 @@ nav#nav
       }
       li{
         border-bottom: 1px solid rgba(#FFF, 30%);
+
+        & > ul{
+          width: $nav-width;
+          padding: 0;
+          margin: 0;
+          background-color: $color-primary;
+          
+          @include media(sm){
+            padding-left: 1.5em;
+            width: calc($nav-width - 1.5em);
+          }
+          @include media(md-lg){
+            display: none;
+            position: absolute;
+            left: $nav-width;
+            top: 0;
+          }
+        }
+
+        &:hover{
+          & > ul{
+            display: block;
+            li{
+              @include media(sm){
+                border-bottom: none;
+              }
+            }
+          }
+        }
       }
     }
   }
