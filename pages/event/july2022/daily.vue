@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  MainHeader(h1='ゲフェンメロンフェスタ2022 デイリークエスト')
+  MainHeader(h1='ゲフェンメロンフェスタ2022 迷子探し・納品情報')
   .main-content
     section.daily-section(v-for="value in dailyData")
       header.daily-section__header
@@ -29,7 +29,7 @@ export default {
     return {
       meta: {
         title: `${process.env.BASETITLE}`,
-        description: 'ゲフェンメロンフェスタ2022のデイリークエストをまとめています',
+        description: 'ゲフェンメロンフェスタ2022の迷子探し・納品情報をまとめています',
         type: 'website',
         url: `${process.env.BASEURL}/`,
         image: `${process.env.BASEURL}/ogp.png`
