@@ -36,6 +36,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-25',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m071map.jpg',
+              detail: '202207m071detail.jpg',
+              caption: 'イズルード'
+            },
+            {
+              level: 'Hard',
+              map: '202207m072map.jpg',
+              detail: '202207m072detail.jpg',
+              caption: 'ニブルヘイム'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7120,
+              item_name: '燃えている馬の蹄',
+              amount: 30
+            },
+            {
+              level: 'Normal',
+              item_id: 6936,
+              item_name: '冷気の核',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 25895,
+              item_name: '深海のヒトデ',
+              amount: 5
+            },
+            {
+              level: 'Inferno',
+              item_id: 1000513,
+              item_name: '危険な酸性の液体',
+              amount: 2
+            }
+          ]
+        },
+        {
           date: '2022-07-24',
           lookingfor: [
             {
