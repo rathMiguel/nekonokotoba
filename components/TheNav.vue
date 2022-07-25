@@ -16,6 +16,7 @@ nav#nav
             li: nuxt-link(to="/event/july2022/daily/").link-wrap 納品 / 迷子探し
             li: nuxt-link(to="/event/july2022/hunt/").link-wrap 討伐リスト
             li: nuxt-link(to="/event/july2022/recipe/").link-wrap レシピ / 材料リスト
+            li: nuxt-link(to="/event/july2022/story/").link-wrap ストーリークエスト
         li: nuxt-link(to="/event/july2022/transport/").link-wrap 特殊転送先リスト
         li: nuxt-link(to="/event/").link-wrap 過去イベント
     li

@@ -2,22 +2,23 @@
 div
   MainHeader(h1='ゲフェンメロンフェスタ2022 迷子探し・納品情報')
   .main-content
-    section.daily-section(v-for="value in dailyData")
-      header.daily-section__header
-        h2.title-section {{ value.date }}
-      .daily-section__main
-        h3 迷子探し
-        .daily-lookingfor
-          .daily-lookingfor__block(v-for="item in value.lookingfor")
-            Place(:name="item.detail" :map="item.map")
-              p {{ item.level }}　{{ item.caption }}
-        h3 納品
-        .daily-outro(v-for="item in value.delivary")
-          dl.daily-dl
-            dt {{ item.level }}
-            dd
-              a(:href="`https://rotool.gungho.jp/monster/item.php?item=${item.item_id}`" target="_blank") {{ item.item_name }}
-              span.amount {{ item.amount }}個
+    article
+      section.daily-section(v-for="value in dailyData")
+        header.daily-section__header
+          h2.title-section {{ value.date }}
+        .daily-section__main
+          h3 迷子探し
+          .daily-lookingfor
+            .daily-lookingfor__block(v-for="item in value.lookingfor")
+              Place(:name="item.detail" :map="item.map")
+                p {{ item.level }}　{{ item.caption }}
+          h3 納品
+          .daily-outro(v-for="item in value.delivary")
+            dl.daily-dl
+              dt {{ item.level }}
+              dd
+                a(:href="`https://rotool.gungho.jp/monster/item.php?item=${item.item_id}`" target="_blank") {{ item.item_name }}
+                span.amount {{ item.amount }}個
 </template>
 
 <script>

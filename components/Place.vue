@@ -106,7 +106,9 @@ export default {
 }
 
 .place-caption{
-  margin-top: 5px;
+  margin-top: 8px;
+  font-size: 0.9em;
+  line-height: 1.5;
   p:last-child{
     margin-bottom: 0;
   }

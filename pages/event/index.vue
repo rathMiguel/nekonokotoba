@@ -12,6 +12,7 @@ div
             li: nuxt-link(to="july2022/daily/") 納品 / 迷子探し
             li: nuxt-link(to="july2022/hunt/") 討伐リスト
             li: nuxt-link(to="july2022/recipe/") レシピ / 材料リスト
+            li: nuxt-link(to="july2022/story/") ストーリークエスト
         li: nuxt-link(to="june2022/") LoveLoveWedding大作戦2022
 </template>
 

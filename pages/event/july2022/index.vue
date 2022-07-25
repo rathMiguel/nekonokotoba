@@ -22,7 +22,6 @@ div
               p 冒険者アカデミー　教室棟1F
       section.section
         h2 デイリークエスト
-        p 1日にやることを纏めました。
         section.section
           h3 スウィーツコンテスト
           ul

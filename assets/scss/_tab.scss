@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@use '~/assets/scss/settings' as *;
+@use '~/assets/scss/mixins' as *;
+
+.tab{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.tab-header{
+  &__list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -1px;
+    margin-right: -1px;
+    li{
+      margin-left: 1px;
+      margin-right: 1px;
+      @include media(sm-md){
+        width: 100%;
+      }
+    }
+    .tab-switch{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 60px;
+      background-color: $color-minor;
+      cursor: pointer;
+      position: relative;
+      width: 100%;
+      @include media(lg){
+        min-width: 300px;
+      }
+
+      &.active{
+        background-color: #fff;
+        &::before{
+          content: "";
+          display: block;
+          width: 100%;
+          height: 5px;
+          background-color: $color-secondary;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.tab-content{
+  &:not(:first-child){
+    display: none;
+  }
+}
+
+.tab-main{
+  background-color: #fff;
+  padding: 30px;
+  @include media(sm){
+    padding: 15px;
+  }
+}
