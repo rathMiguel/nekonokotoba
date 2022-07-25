@@ -6,6 +6,11 @@
 .table-wrap{
   width: 100%;
   overflow: auto;
+  .table{
+    @include media(sm-md){
+      width: 800px;
+    }
+  }
 }
 
 .table-title{
@@ -28,9 +33,6 @@
   line-height: 1.5;
   background-color: #fff;
   border: 1px solid #CCC;
-  @include media(sm-md){
-    width: 800px;
-  }
   th, td{
     padding: 13px 10px;
     white-space: pre-wrap;
@@ -119,6 +121,10 @@
         background-color: #F9F9F9;
       }
     }
+  }
+
+  &.full{
+    width: 100%;
   }
 
   &.todo{
