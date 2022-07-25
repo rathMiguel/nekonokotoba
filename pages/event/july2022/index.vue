@@ -110,35 +110,5 @@ export default {
 <style lang="scss" scoped>
 @use '~/assets/scss/settings' as *;
 @use '~/assets/scss/mixins' as *;
-
 @use '~/assets/scss/table';
-
-.section{
-  margin-bottom: 40px;
-  @include media(sm){
-    margin-bottom: 20px;
-  }
-}
-
-.row{
-  display: flex;
-  @include media(sm){
-    flex-direction: column;
-  }
-  @include media(md-lg){
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-}
-
-.column{
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  @include media(md-lg){
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
 </style>
