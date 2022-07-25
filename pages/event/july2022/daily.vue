@@ -37,6 +37,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-26',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '',
+              detail: '202207m081detail.jpg',
+              caption: 'エクラージュ　ホームツリー内　治療所'
+            },
+            {
+              level: 'Hard',
+              map: '',
+              detail: '202207m082detail.jpg',
+              caption: 'ビョウンゴ病院 2F（※要クエ「新任看護師と病院」）'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 955,
+              item_name: '蟲の皮',
+              amount: 30
+            },
+            {
+              level: 'Normal',
+              item_id: 25158,
+              item_name: '中核ゼリー',
+              amount: 20
+            },
+            {
+              level: 'Hard',
+              item_id: 25299,
+              item_name: '雪玉',
+              amount: 5
+            },
+            {
+              level: 'Inferno',
+              item_id: 25259,
+              item_name: '討伐団募集のチラシ',
+              amount: 2
+            }
+          ]
+        },
+        {
           date: '2022-07-25',
           lookingfor: [
             {
@@ -362,16 +405,16 @@ export default {
     flex-direction: column;
   }
   @include media(md-lg){
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
 
   & > *{
     margin-bottom: 1em;
     width: 100%;
     @include media(md-lg){
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 1em;
+      margin-right: 1em;
     }
   }
 }
