@@ -48,7 +48,7 @@ export default {
     &::before{
       font-family: $en;
       color: $color-secondary;
-      content: "NOTE";
+      content: "MEMO";
       position: absolute;
       top: -1em;
       left: 1em;
