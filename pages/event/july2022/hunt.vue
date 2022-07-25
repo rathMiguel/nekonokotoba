@@ -17,7 +17,7 @@ export default {
         title: `ゲフェンメロンフェスタ2022 討伐リスト - ${process.env.BASETITLE}`,
         description: 'TODO機能付きゲフェンメロンフェスタ2022の討伐リストを公開しています。',
         type: 'website',
-        url: `${process.env.BASEURL}/event/july2022/`,
+        url: `${process.env.BASEURL}/event/july2022/hunt/`,
         image: `${process.env.BASEURL}/ogp.png`
       }
     }

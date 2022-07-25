@@ -32,7 +32,7 @@ export default {
         title: `${process.env.BASETITLE}`,
         description: 'ゲフェンメロンフェスタ2022の迷子探し・納品情報をまとめています',
         type: 'website',
-        url: `${process.env.BASEURL}/`,
+        url: `${process.env.BASEURL}/event/july2022/daily/`,
         image: `${process.env.BASEURL}/ogp.png`
       },
       dailyData: [

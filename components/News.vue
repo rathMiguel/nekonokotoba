@@ -16,17 +16,17 @@ export default {
       posts: [
         {
           date: '2022-07-19',
-          link: '/event/july2022',
+          link: '/event/july2022/',
           body: 'ゲフェンメロンフェスタ概要をまとめました'
         },
         {
           date: '2022-06-29',
-          link: '/event/transport',
+          link: '/event/transport/',
           body: 'イベントホールの特殊転送先リストを公開しました'
         },
         {
           date: '2022-06-29',
-          link: '/event/june2022',
+          link: '/event/june2022/',
           body: 'LoveLoveWedding大作戦2022 討伐リストを公開しました'
         }
       ]

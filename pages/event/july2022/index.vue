@@ -98,7 +98,7 @@ export default {
         title: `ゲフェンメロンフェスタ優品 イベントまとめ - ${process.env.BASETITLE}`,
         description: '',
         type: 'website',
-        url: `${process.env.BASEURL}/`,
+        url: `${process.env.BASEURL}/event/july2022/`,
         image: `${process.env.BASEURL}/ogp.png`
       }
     }

@@ -27,7 +27,7 @@ export default {
         title: `ゲフェンメロンフェスタ2022 レシピをさがす - ${process.env.BASETITLE}`,
         description: 'ゲフェンメロンフェスタ2022で作成できるレシピ、材料入手先を掲載しています',
         type: 'website',
-        url: `${process.env.BASEURL}/event/july2022recipe/`,
+        url: `${process.env.BASEURL}/event/july2022/recipe/`,
         image: `${process.env.BASEURL}/ogp.png`
       },
       tabIndex: 1

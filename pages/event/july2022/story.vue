@@ -388,7 +388,7 @@ export default {
         title: `ゲフェンメロンフェスタ2022 ストーリークエスト - ${process.env.BASETITLE}`,
         description: 'ゲフェンメロンフェスタ2022のストーリークエストの進行をまとめています',
         type: 'website',
-        url: `${process.env.BASEURL}/event/july2022recipe/`,
+        url: `${process.env.BASEURL}/event/july2022/story/`,
         image: `${process.env.BASEURL}/ogp.png`
       },
       tabIndex: 1
