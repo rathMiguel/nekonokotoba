@@ -29,10 +29,12 @@
   width: 100%;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  font-size: 14px;
   line-height: 1.5;
   background-color: #fff;
   border: 1px solid #CCC;
+  @include media(lg){
+    font-size: 0.9rem;
+  }
   th, td{
     padding: 13px 10px;
     white-space: pre-wrap;

@@ -3,15 +3,17 @@
 
 body {
   font-family: $ja_go;
-  font-size: $fz-default;
   color: $color-default;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-size: $fz-default;
   line-height: 1.85;
   background-color: #F6F6F6;
   -webkit-font-smoothing: subpixel-antialiased;
+  @include media(lg){
+    font-size: 1.05em;
+  }
   @include media(sm){
+    font-size: 0.86em;
     line-height: 1.7;
   }
 }

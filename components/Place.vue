@@ -87,15 +87,15 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    height: 25px;
-    width: 25px;
+    height: 1.5em;
+    width: 1.5em;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $color-primary;
     background-color: rgba(#fff, 0.6);
-    font-size: 13px;
+    font-size: 0.82em;
   }
 }
 
