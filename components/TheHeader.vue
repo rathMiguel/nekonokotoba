@@ -53,6 +53,7 @@ export default {
   height: 100vh;
   background-color: rgba(#000, 10%);
   display: none;
+  z-index: 990;
   &.is-active{
     display: block;
   }
