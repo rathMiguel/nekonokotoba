@@ -9,7 +9,7 @@ section.mainimage
   .mainimage__logo
     h1: img(src="/images/logo_top.svg" alt="猫のことば　研究所" width=400 height=135)
     .mainimage-subtitle
-      p ラグナロクオンラインをゆるく研究。
+      p ラグナロクオンラインをゆるっと研究。
 </template>
 
 <script>
