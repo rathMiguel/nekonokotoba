@@ -11,13 +11,13 @@ div
       section.section
         h2 会場への行き方
         .row
-          .column.column-2-md.column-3-lg
+          .column.column-6-md.column-4-lg
             Place(name='202207detail1.jpg' map='202207map1.jpg')
               p プロンテラ（54, 55）
-          .column.column-2-md.column-3-lg
+          .column.column-6-md.column-4-lg
             Place(name='202207detail2.jpg' map='202207map2.jpg')
               p ラザーニャ（325, 210）
-          .column.column-2-md.column-3-lg
+          .column.column-6-md.column-4-lg
             Place(name='202207detail3.jpg')
               p 冒険者アカデミー　教室棟1F
       section.section
