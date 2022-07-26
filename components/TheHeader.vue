@@ -18,6 +18,11 @@ export default {
     navToggle () {
       this.isActive = !this.isActive
     }
+  },
+  watch: {
+    '$route' () {
+      this.isActive = false
+    }
   }
 }
 </script>
