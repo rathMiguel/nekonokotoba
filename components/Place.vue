@@ -2,8 +2,8 @@
 .place
   .place-wrap
     .place-main
+      i.icon-zoom: font-awesome-icon(:icon="['fas', 'magnifying-glass']")
       .place-map(v-on:click="zoomToggle('map')" v-if="map")
-        i.icon-zoom: font-awesome-icon(:icon="['fas', 'magnifying-glass']")
         picture
           source(:srcset="getSrc(`/images/map/${map}`, 'webp')" type="image/webp" height=120 width=120)
           source(:srcset="getSrc(`/images/map/${map}`, 'jpg')" type="image/jpeg" height=120 width=120)
@@ -95,22 +95,22 @@ export default {
       filter: brightness(1.5);
     }
   }
+}
 
-  .icon-zoom{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    height: 1.5em;
-    width: 1.5em;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color-primary;
-    background-color: rgba(#fff, 0.6);
-    font-size: 0.82em;
-  }
+.icon-zoom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-primary;
+  background-color: rgba(#fff, 0.6);
+  font-size: 0.82em;
 }
 
 .place-detail{
