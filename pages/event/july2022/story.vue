@@ -411,10 +411,7 @@ export default {
 
 .content{
   @include media(sm){
-    margin-top: -1.5em;
-  }
-  @include media(md-lg){
-    padding-top: 0.5em;
+    margin-top: -2em;
   }
 }
 
