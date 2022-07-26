@@ -71,9 +71,9 @@ export default {
           lookingfor: [
             {
               level: 'Easy',
-              map: 'イベントホール',
+              map: '',
               detail: '202207m091detail.jpg',
-              caption: ''
+              caption: 'イベントホール'
             },
             {
               level: 'Hard',
