@@ -63,6 +63,8 @@ export default {
   webfontloader: {
     google: {
       families: [
+        // 'M+PLUS+1p',
+        'Zen+Kurenaido',
         'Karla'
       ]
     }
