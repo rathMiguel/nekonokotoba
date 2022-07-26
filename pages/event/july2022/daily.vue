@@ -67,11 +67,11 @@ export default {
       },
       dailyData: [
         {
-          date: '2022-07-00',
+          date: '2022-07-27',
           lookingfor: [
             {
               level: 'Easy',
-              map: 'イベントホール内',
+              map: 'イベントホール',
               detail: '202207m091detail.jpg',
               caption: ''
             },
