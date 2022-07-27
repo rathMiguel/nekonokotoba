@@ -18,30 +18,30 @@ div
               p 道のりがやや複雑なので、別途案内します。
               .row
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m081detail1.jpg'): p 「エクラージュ案内」からホームツリー前に転送
+                  Place(name='202207m081detail1.jpg'): p 1. 「エクラージュ案内」からホームツリー前に転送
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m081detail2.jpg'): p ホームツリーに入る
+                  Place(name='202207m081detail2.jpg'): p 2. ホームツリーに入る
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m081detail3.jpg'): p 広間から左へ移動
+                  Place(name='202207m081detail3.jpg'): p 3. 広間から左へ移動
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m081detail4.jpg'): p 進んだ先に看板があるので、診療所へ進む
+                  Place(name='202207m081detail4.jpg'): p 4. 進んだ先に看板があるので、診療所へ進む
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m081detail.jpg'): p 部屋の奥にメロンがあります
+                  Place(name='202207m081detail.jpg'): p 5. 部屋の奥にメロンがあります
               h4 ビョウンゴ病院 メロンまでの道のり
               p ※要クエスト（<a href="http://www.roquest.work/index.php?PortMalaya#Nurse" target="_blank">新任看護師と病院</a>）
               .row
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail1.jpg'): p ポートマラヤ（59, 74）付近の看護師に話しかける
+                  Place(name='202207m082detail1.jpg'): p 1. ポートマラヤ（59, 74）付近の看護師に話しかける
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail2.jpg'): p 入ったすぐ側の看護師に話しかけ、「病院の奥へ向かう」を選択
+                  Place(name='202207m082detail2.jpg'): p 2. 入ったすぐ側の看護師に話しかけ、「病院の奥へ向かう」を選択
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail3.jpg'): p 移動先近くのワープポイントへ入る
+                  Place(name='202207m082detail3.jpg'): p 3. 移動先近くのワープポイントへ入る
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail4.jpg'): p 右へまっすぐ進み、ワープポイントへ入る
+                  Place(name='202207m082detail4.jpg'): p 4. 右へまっすぐ進み、ワープポイントへ入る
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail5.jpg'): p 上へ進んだ先のワープポイントへ入る
+                  Place(name='202207m082detail5.jpg'): p 5. 上へ進んだ先のワープポイントへ入る
                 .column.column-6-sm.column-4-md.column-4-lg
-                  Place(name='202207m082detail.jpg'): p 上へ進み、右上あたりに見えるベッドの上にメロンがあります
+                  Place(name='202207m082detail.jpg'): p 6. 上へ進み、右上あたりに見えるベッドの上にメロンがあります
           h3 納品
           .daily-outro(v-for="item in value.delivary")
             dl.daily-dl
@@ -66,6 +66,49 @@ export default {
         image: `${process.env.BASEURL}/ogp.png`
       },
       dailyData: [
+        {
+          date: '2022-07-28',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m101map.jpg',
+              detail: '202207m101detail.jpg',
+              caption: 'ラザーニャ'
+            },
+            {
+              level: 'Hard',
+              map: '202207m102map.jpg',
+              detail: '202207m102detail.jpg',
+              caption: 'ジャワイ（※要結婚）'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7007,
+              item_name: 'おおネズミの爪',
+              amount: 20
+            },
+            {
+              level: 'Normal',
+              item_id: 25278,
+              item_name: '盗賊団スカーフ',
+              amount: 30
+            },
+            {
+              level: 'Hard',
+              item_id: 25298,
+              item_name: '魂が宿った宝石',
+              amount: 10
+            },
+            {
+              level: 'Inferno',
+              item_id: 25261,
+              item_name: '千切れた一切れの紙',
+              amount:2 
+            }
+          ]
+        },
         {
           date: '2022-07-27',
           lookingfor: [
