@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-29',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m111map.jpg',
+              detail: '202207m111detail.jpg',
+              caption: 'マラン島'
+            },
+            {
+              level: 'Hard',
+              map: '202207m112map.jpg',
+              detail: '202207m112detail.jpg',
+              caption: '沈没船 1F'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 923,
+              item_name: '悪魔の角',
+              amount: 20
+            },
+            {
+              level: 'Normal',
+              item_id: 25283,
+              item_name: '茶色のマフラー',
+              amount: 30
+            },
+            {
+              level: 'Hard',
+              item_id: 1000505,
+              item_name: '不透明な液体',
+              amount: 5
+            },
+            {
+              level: 'Inferno',
+              item_id: 25781,
+              item_name: '小さく可愛いろうそく',
+              amount: 2
+            }
+          ]
+        },
+        {
           date: '2022-07-28',
           lookingfor: [
             {
