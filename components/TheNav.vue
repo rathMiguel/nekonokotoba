@@ -18,7 +18,7 @@ nav#nav
             li: nuxt-link(to="/event/july2022/recipe/").link-wrap レシピ / 材料リスト
             li: nuxt-link(to="/event/july2022/story/").link-wrap ストーリークエスト
         li: nuxt-link(to="/event/transport/").link-wrap 特殊転送先リスト
-        li: nuxt-link(to="/event/").link-wrap 過去イベント
+        li: nuxt-link(to="/event/").link-wrap 過去イベント一覧
     li
       .link-wrap
         font-awesome-icon(:icon="['far', 'rectangle-list']").icon

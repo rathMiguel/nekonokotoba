@@ -14,8 +14,8 @@ div
                 p {{ item.level }}　{{ item.caption }}
           .daily-additional
             Note(v-if="value.date === '2022-07-26'")
-              h4 エクラージュのメロンまでの道のり
-              p 道のりがやや複雑なので、別途案内します。
+              h4 エクラージュのメロンまでの行き方
+              p やや複雑なので、別途案内します。
               .row
                 .column.column-6-sm.column-4-md.column-4-lg
                   Place(name='202207m081detail1.jpg'): p 1. 「エクラージュ案内」からホームツリー前に転送
@@ -27,7 +27,7 @@ div
                   Place(name='202207m081detail4.jpg'): p 4. 進んだ先に看板があるので、診療所へ進む
                 .column.column-6-sm.column-4-md.column-4-lg
                   Place(name='202207m081detail.jpg'): p 5. 部屋の奥にメロンがあります
-              h4 ビョウンゴ病院 メロンまでの道のり
+              h4 ビョウンゴ病院 メロンまでの行き方
               p ※要クエスト（<a href="http://www.roquest.work/index.php?PortMalaya#Nurse" target="_blank">新任看護師と病院</a>）
               .row
                 .column.column-6-sm.column-4-md.column-4-lg
