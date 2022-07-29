@@ -1,5 +1,6 @@
 <template lang="pug">
 nav#nav
+  //- |{{ $data }}
   ul.nav-list
     li
       nuxt-link(to="/").link-wrap
@@ -13,7 +14,7 @@ nav#nav
         li
           nuxt-link(to="/event/july2022/").link-wrap ゲフェンメロンフェスタ2022
           ul
-            li: nuxt-link(to="/event/july2022/daily/").link-wrap 納品 / 迷子探し
+            li: nuxt-link(:to="`/event/july2022/daily/?d=${d}`").link-wrap 納品 / 迷子探し
             li: nuxt-link(to="/event/july2022/hunt/").link-wrap 討伐リスト
             li: nuxt-link(to="/event/july2022/recipe/").link-wrap レシピ / 材料リスト
             li: nuxt-link(to="/event/july2022/story/").link-wrap ストーリークエスト
@@ -28,6 +29,25 @@ nav#nav
         font-awesome-icon(:icon="['far', 'sun']").icon
         span.link-text TOOLS
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      d: ''
+    }
+  },
+  mounted: function() {
+    const date = new Date()
+    let y = date.getFullYear()
+    let m = ('00' + (date.getMonth() + 1)).slice(-2)
+    let d = ('00' + date.getDate()).slice(-2)
+
+    return this.d = y + m + d
+  },
+}
+</script>
+
 
 <style lang="scss" scoped>
 @use '~/assets/scss/settings' as *;
@@ -123,5 +143,4 @@ nav#nav
     padding: 18px 10px;
   }
 }
-
 </style>
