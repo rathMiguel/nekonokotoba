@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  MainHeader(h1='ゲフェンメロンフェスタ2022 迷子探し・納品情報')
+  MainHeader(h1='ゲフェンメロンフェスタ優品 迷子探し・納品情報')
   .main-content
     article
       section.daily-section(v-for="value in dailyData")
@@ -59,8 +59,8 @@ export default {
   data() {
     return {
       meta: {
-        title: `${process.env.BASETITLE}`,
-        description: 'ゲフェンメロンフェスタ2022の迷子探し・納品情報をまとめています',
+        title: `ゲフェンメロンフェスタ優品　迷子探し・納品情報 - ${process.env.BASETITLE}`,
+        description: 'ゲフェンメロンフェスタ優品の迷子探し・納品情報をまとめています',
         type: 'website',
         url: `${process.env.BASEURL}/event/july2022/daily/`,
         image: `${process.env.BASEURL}/ogp.png`

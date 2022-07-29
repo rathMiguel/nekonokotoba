@@ -12,7 +12,7 @@ nav#nav
         span.link-text EVENT DATA
       ul
         li
-          nuxt-link(to="/event/july2022/").link-wrap ゲフェンメロンフェスタ2022
+          nuxt-link(to="/event/july2022/").link-wrap ゲフェンメロンフェスタ優品
           ul
             li: nuxt-link(:to="`/event/july2022/daily/?d=${d}`").link-wrap 納品 / 迷子探し
             li: nuxt-link(to="/event/july2022/hunt/").link-wrap 討伐リスト

@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  MainHeader(h1='ゲフェンメロンフェスタ2022 レシピ、材料入手先リスト')
+  MainHeader(h1='ゲフェンメロンフェスタ優品 レシピ、材料入手先リスト')
   .main-content
     .tab
       .tab-header
@@ -24,8 +24,8 @@ export default {
   data() {
     return {
       meta: {
-        title: `ゲフェンメロンフェスタ2022 レシピをさがす - ${process.env.BASETITLE}`,
-        description: 'ゲフェンメロンフェスタ2022で作成できるレシピ、材料入手先を掲載しています',
+        title: `ゲフェンメロンフェスタ優品 レシピをさがす - ${process.env.BASETITLE}`,
+        description: 'ゲフェンメロンフェスタ優品で作成できるレシピ、材料入手先を掲載しています',
         type: 'website',
         url: `${process.env.BASEURL}/event/july2022/recipe/`,
         image: `${process.env.BASEURL}/ogp.png`

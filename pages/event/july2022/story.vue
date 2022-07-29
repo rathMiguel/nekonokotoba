@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  MainHeader(h1='ゲフェンメロンフェスタ2022 ストーリークエスト')
+  MainHeader(h1='ゲフェンメロンフェスタ優品 ストーリークエスト')
   mixin questFlow(image, map, caption)
     .row
       if(image)
@@ -385,8 +385,8 @@ export default {
   data() {
     return {
       meta: {
-        title: `ゲフェンメロンフェスタ2022 ストーリークエスト - ${process.env.BASETITLE}`,
-        description: 'ゲフェンメロンフェスタ2022のストーリークエストの進行をまとめています',
+        title: `ゲフェンメロンフェスタ優品 ストーリークエスト - ${process.env.BASETITLE}`,
+        description: 'ゲフェンメロンフェスタ優品ストーリークエスト「激突！スウィーツコンテスト」の進行を案内しています',
         type: 'website',
         url: `${process.env.BASEURL}/event/july2022/story/`,
         image: `${process.env.BASEURL}/ogp.png`
