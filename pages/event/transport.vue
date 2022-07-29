@@ -78,7 +78,7 @@ export default {
     return {
       meta: {
         title: `イベントホール　特殊転送先リスト - ${process.env.BASETITLE}`,
-        description: 'イベントホール内にいる特殊転送員の転送先リストを掲載しています',
+        description: 'イベント中に利用可能なイベントホール内にいる特殊転送員の転送先リストを掲載しています',
         type: 'website',
         url: `${process.env.BASEURL}/event/transport/`,
         image: `${process.env.BASEURL}/ogp.png`

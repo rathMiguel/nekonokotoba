@@ -24,8 +24,8 @@ export default {
   data() {
     return {
       meta: {
-        title: `過去のシーズンイベント一覧 - ${process.env.BASETITLE}`,
-        description: '過去に開催されたのシーズンイベント一覧です',
+        title: `過去のイベント一覧 - ${process.env.BASETITLE}`,
+        description: '過去に開催されたのイベント一覧です',
         type: 'website',
         url: `${process.env.BASEURL}/event/transport/`,
         image: `${process.env.BASEURL}/ogp.png`

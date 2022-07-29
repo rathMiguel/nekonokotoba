@@ -95,7 +95,7 @@ export default {
   data() {
     return {
       meta: {
-        title: `ゲフェンメロンフェスタ優品 イベントまとめ - ${process.env.BASETITLE}`,
+        title: `ゲフェンメロンフェスタ優品 - ${process.env.BASETITLE}`,
         description: '',
         type: 'website',
         url: `${process.env.BASEURL}/event/july2022/`,
