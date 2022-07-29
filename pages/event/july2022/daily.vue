@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-07-30',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '',
+              detail: '202207m121detail.jpg',
+              caption: ''
+            },
+            {
+              level: 'Hard',
+              map: '202207m122map.jpg',
+              detail: '202207m122detail.jpg',
+              caption: ''
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7006,
+              item_name: '赤いコウモリの翼',
+              amount: 40
+            },
+            {
+              level: 'Normal',
+              item_id: 25284,
+              item_name: '湿地虫の殻',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 7565,
+              item_name: 'ベトベトな毒',
+              amount: 25
+            },
+            {
+              level: 'Inferno',
+              item_id: 25619,
+              item_name: '粘土人形',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-07-29',
           lookingfor: [
             {
