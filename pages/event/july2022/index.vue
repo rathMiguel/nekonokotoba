@@ -21,9 +21,9 @@ div
             Place(name='202207detail3.jpg')
               p 冒険者アカデミー　教室棟1F
       section.section
-        h2 デイリークエスト
+        h2 ストーリークエスト
         section.section
-          h3 スウィーツコンテスト
+          h3 激突！スウィーツコンテスト
           ul
             li 「魔女ジラント」または「王女メア」を選んで進める
             li 遊べるのはアカウントにつき1回のみ
@@ -68,6 +68,12 @@ div
                   th 特定時刻（※）にイベント会場に<br>モンスターが出現
                   td 堕メロリンとデカ堕メロリン
                   td ミニメロリンとデカメロリン
+          nuxt-link(to="/event/july2022/story/").button.button-info クエストガイド
+      section.section
+        h2 デイリークエスト
+        section.section
+          h3 メロン遠征隊
+          p 会場内のデヒョンから
         section.section
           h3 討伐クエスト
           p 1日5回まで討伐可能。

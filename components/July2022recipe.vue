@@ -21,7 +21,7 @@
             td {{ material.item }}
             td {{ material.amount }}
             td {{ material.memo }}
-  </template>
+</template>
 
 <script>
 export default {
