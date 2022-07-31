@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-01',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m141map.jpg',
+              detail: '202207m141detail.jpg',
+              caption: 'ブラジリス'
+            },
+            {
+              level: 'Hard',
+              map: '202207m142map.jpg',
+              detail: '202207m142detail.jpg',
+              caption: '滝の中の洞窟1F ※要クエスト'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 905,
+              item_name: '植物の茎',
+              amount: 10
+            },
+            {
+              level: 'Normal',
+              item_id: 7347,
+              item_name: '研究記録',
+              amount: 60
+            },
+            {
+              level: 'Hard',
+              item_id: 7007,
+              item_name: 'おおネズミの爪',
+              amount: 30
+            },
+            {
+              level: 'Inferno',
+              item_id: 7450,
+              item_name: '骨の鎧の欠片',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-07-31',
           lookingfor: [
             {
