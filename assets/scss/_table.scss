@@ -125,6 +125,24 @@
     }
   }
 
+  &.bordered{
+    border-collapse: collapse;
+    th, td{
+      border: 1px solid #DDD;
+    }
+    th{
+      border: 1px solid #FFF;
+    }
+  }
+
+  &.guided{
+    tr{
+      &:hover{
+        background-color: $color-minor;
+      }
+    }
+  }
+
   &.full{
     width: 100%;
   }
