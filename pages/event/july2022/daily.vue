@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-02',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m151map.jpg',
+              detail: '202207m151detail.jpg',
+              caption: '旧フェイヨン（写真の井戸から入ってすぐ）'
+            },
+            {
+              level: 'Hard',
+              map: '202207m152map.jpg',
+              detail: '202207m152detail.jpg',
+              caption: 'クラカト火山 ※要クエスト'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7070,
+              item_name: '割れた甲羅',
+              amount: 10
+            },
+            {
+              level: 'Normal',
+              item_id: 25279,
+              item_name: 'お粗末な弾薬',
+              amount: 30
+            },
+            {
+              level: 'Hard',
+              item_id: 25267,
+              item_name: '怪しい魔法陣',
+              amount: 20
+            },
+            {
+              level: 'Inferno',
+              item_id: 25639,
+              item_name: '雷に打たれた石の破片',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-08-01',
           lookingfor: [
             {
