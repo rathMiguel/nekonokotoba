@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-03',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m161map.jpg',
+              detail: '202207m161detail.jpg',
+              caption: 'デワタ'
+            },
+            {
+              level: 'Hard',
+              map: '202207m162map.jpg',
+              detail: '202207m162detail.jpg',
+              caption: 'ピラミッドダンジョン F4'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7561,
+              item_name: '氷の心臓',
+              amount: 40
+            },
+            {
+              level: 'Normal',
+              item_id: 7008,
+              item_name: 'めちゃ硬い角',
+              amount: 40
+            },
+            {
+              level: 'Hard',
+              item_id: 25899,
+              item_name: '深海のエッセンス',
+              amount: 10
+            },
+            {
+              level: 'Inferno',
+              item_id: 25894,
+              item_name: '腐敗した深海魚',
+              amount: 2
+            }
+          ]
+        },
+        {
           date: '2022-08-02',
           lookingfor: [
             {
