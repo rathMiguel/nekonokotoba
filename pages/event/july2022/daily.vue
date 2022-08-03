@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-04',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m1171map.jpg',
+              detail: '202207m1171detail.jpg',
+              caption: 'ファッションセンターコスミ（写真NPCに話しかけて進んだ先）'
+            },
+            {
+              level: 'Hard',
+              map: '202207m1172map.jpg',
+              detail: '202207m1172detail.jpg',
+              caption: 'フレイムヴァレー'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7066,
+              item_name: '氷片',
+              amount: 20
+            },
+            {
+              level: 'Normal',
+              item_id: 6938,
+              item_name: 'ハリネズミの大きな針',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 25641,
+              item_name: '堅く固まった泥',
+              amount: 15
+            },
+            {
+              level: 'Inferno',
+              item_id: 25775,
+              item_name: 'ふかふかな布切れ',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-08-03',
           lookingfor: [
             {
