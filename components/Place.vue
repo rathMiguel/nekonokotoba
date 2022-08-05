@@ -78,11 +78,10 @@ export default {
 
 .place-map{
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  top: 8px;
   z-index: 5;
-  border-left: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border: 1px solid #FFF;
   cursor: pointer;
   max-width: 150px;
   width: 25%;
@@ -100,7 +99,7 @@ export default {
 .icon-zoom{
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   z-index: 10;
   height: 1.5em;
   width: 1.5em;
