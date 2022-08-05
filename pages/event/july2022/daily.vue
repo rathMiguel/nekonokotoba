@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-06',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m191map.jpg',
+              detail: '202207m191detail.jpg',
+              caption: 'アリーナ待機室（地図位置の建物の通路を進んだ先）'
+            },
+            {
+              level: 'Hard',
+              map: '202207m192map.jpg',
+              detail: '202207m192detail.jpg',
+              caption: 'デワタフィールド 01'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7320,
+              item_name: '粉じん',
+              amount: 30
+            },
+            {
+              level: 'Normal',
+              item_id: 6560,
+              item_name: '落ち葉のしおり',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 25777,
+              item_name: '謎の樹液',
+              amount: 20
+            },
+            {
+              level: 'Inferno',
+              item_id: 25314,
+              item_name: '航海日誌',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-08-05',
           lookingfor: [
             {
