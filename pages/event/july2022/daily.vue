@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-07',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m201map.jpg',
+              detail: '202207m201detail.jpg',
+              caption: 'ベインス室内（入って右側のほう）'
+            },
+            {
+              level: 'Hard',
+              map: '202207m202map.jpg',
+              detail: '202207m202detail.jpg',
+              caption: 'ココモビーチ 02'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7323,
+              item_name: 'へこんだやかん',
+              amount: 15
+            },
+            {
+              level: 'Normal',
+              item_id: 25162,
+              item_name: 'アンチョビクッキー',
+              amount: 60
+            },
+            {
+              level: 'Hard',
+              item_id: 25640,
+              item_name: '鉢底石',
+              amount: 15
+            },
+            {
+              level: 'Inferno',
+              item_id: 25634,
+              item_name: '古のウータンガードの盾の欠片',
+              amount: 2
+            }
+          ]
+        },
+        {
           date: '2022-08-06',
           lookingfor: [
             {
