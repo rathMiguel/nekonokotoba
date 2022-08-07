@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-08',
+          lookingfor: [
+            {
+              level: 'Easy',
+              map: '202207m211map.jpg',
+              detail: '202207m211detail.jpg',
+              caption: 'モーラ'
+            },
+            {
+              level: 'Hard',
+              map: '202207m212map.jpg',
+              detail: '202207m212detail.jpg',
+              caption: '星明りの珊瑚礁'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 7005,
+              item_name: 'ドクロ',
+              amount: 40
+            },
+            {
+              level: 'Normal',
+              item_id: 25281,
+              item_name: 'お粗末なシミター',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 23228,
+              item_name: '微かな月餅',
+              amount: 60
+            },
+            {
+              level: 'Inferno',
+              item_id: 25780,
+              item_name: '悪魔のエッセンス',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-08-07',
           lookingfor: [
             {
