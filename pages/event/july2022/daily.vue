@@ -67,6 +67,49 @@ export default {
       },
       dailyData: [
         {
+          date: '2022-08-09',
+          lookingfor: [
+            {
+              level: 'Normal',
+              map: '202207m011map.jpg',
+              detail: '202207m011detail.jpg',
+              caption: 'コモド'
+            },
+            {
+              level: 'Hard',
+              map: '202207m012map.jpg',
+              detail: '202207m012detail.jpg',
+              caption: '名も無き島 修道院3F'
+            }
+          ],
+          delivary: [
+            {
+              level: 'Easy',
+              item_id: 928,
+              item_name: '虫の觸角',
+              amount: 50
+            },
+            {
+              level: 'Normal',
+              item_id: 7119,
+              item_name: '菌糸',
+              amount: 10
+            },
+            {
+              level: 'Hard',
+              item_id: 25615,
+              item_name: 'ネジリアンのソウルストーン',
+              amount: 10
+            },
+            {
+              level: 'Inferno',
+              item_id: 25262,
+              item_name: '乾燥したクローバー',
+              amount: 1
+            }
+          ]
+        },
+        {
           date: '2022-08-08',
           lookingfor: [
             {
