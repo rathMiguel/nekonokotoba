@@ -6,14 +6,15 @@ div
     article.article-blog
       p 期間限定イベントの情報をまとめています
       ul
-        //- li
-          nuxt-link(to="/event/july2022/") ゲフェンメロンフェスタ　優品
+        li
+          nuxt-link(to="/event/july2022/") ゲフェンメロンフェスタ優品
           ul
-            li: nuxt-link(to="/event/july2022/daily/") 納品 / 迷子探し
+            li: nuxt-link(:to="`/event/july2022/daily/?d=${d}`") 納品 / 迷子探し
             li: nuxt-link(to="/event/july2022/hunt/") 討伐リスト
             li: nuxt-link(to="/event/july2022/recipe/") レシピ / 材料リスト
             li: nuxt-link(to="/event/july2022/story/") ストーリークエスト
         li: nuxt-link(to="/event/june2022/") LoveLoveWedding大作戦2022
+        li: nuxt-link(to="/event/transport/") 特殊転送先リスト
 </template>
 
 <script>

@@ -11,14 +11,6 @@ nav#nav
         font-awesome-icon(:icon="['far', 'flag']").icon
         span.link-text EVENT DATA
       ul
-        li
-          nuxt-link(to="/event/july2022/").link-wrap ゲフェンメロンフェスタ優品
-          ul
-            li: nuxt-link(:to="`/event/july2022/daily/?d=${d}`").link-wrap 納品 / 迷子探し
-            li: nuxt-link(to="/event/july2022/hunt/").link-wrap 討伐リスト
-            li: nuxt-link(to="/event/july2022/recipe/").link-wrap レシピ / 材料リスト
-            li: nuxt-link(to="/event/july2022/story/").link-wrap ストーリークエスト
-        li: nuxt-link(to="/event/transport/").link-wrap 特殊転送先リスト
         li: nuxt-link(to="/event/").link-wrap 過去イベント一覧
     li
       .link-wrap
