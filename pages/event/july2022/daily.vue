@@ -7,7 +7,7 @@ div
         header.daily-section__header
           h2.title-section {{ value.date }}
         .daily-section__main
-          h3 迷子探し
+          h3.title-secondary 迷子探し
           .daily-lookingfor
             .daily-lookingfor__block(v-for="item in value.lookingfor")
               Place(:name="item.detail" :map="item.map")
@@ -42,13 +42,19 @@ div
                   Place(name='202207m082detail5.jpg'): p 5. 上へ進んだ先のワープポイントへ入る
                 .column.column-6-sm.column-4-md.column-4-lg
                   Place(name='202207m082detail.jpg'): p 6. 上へ進み、右上あたりに見えるベッドの上にメロンがあります
-          h3 納品
-          .daily-outro(v-for="item in value.delivary")
-            dl.daily-dl
-              dt {{ item.level }}
-              dd
-                a(:href="`https://rotool.gungho.jp/monster/item.php?item=${item.item_id}`" target="_blank") {{ item.item_name }}
-                span.amount {{ item.amount }}個
+          h3.title-secondary 納品
+          table.table.striped
+            thead
+              tr
+                th 難易度
+                th アイテム
+            tbody
+              tr(v-for="item in value.delivary")
+                td {{ item.level }}
+                td
+                  a(:href="`https://rotool.gungho.jp/monster/item.php?item=${item.item_id}`" target="_blank")
+                    |{{ item.item_name }}
+                    span.amount {{ item.amount }}個
 </template>
 
 <script>
@@ -1021,12 +1027,13 @@ export default {
 <style lang="scss" scoped>
 @use '~/assets/scss/settings' as *;
 @use '~/assets/scss/mixins' as *;
+@use '~/assets/scss/table';
 
 .daily-section{
   margin-bottom: 2em;
-   &__header{
+  &__header{
     margin-bottom: 0.5em;
-   }
+  }
 }
 
 .daily-lookingfor{
@@ -1054,4 +1061,26 @@ export default {
 .daily-dl{
   margin-bottom: 0.5em;
 }
+
+.title-section{
+  background-color: $color-primary;
+  color: #FFF;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: 20px;
+  @include media(sm){
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+  }
+}
+
+.title-secondary{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
 </style>
