@@ -9,7 +9,7 @@ div
         li
           nuxt-link(to="/event/july2022/") ゲフェンメロンフェスタ優品
           ul
-            li: nuxt-link(:to="`/event/july2022/daily/?d=${d}`") 納品 / 迷子探し
+            li: nuxt-link(to="/event/july2022/daily/") 納品 / 迷子探し
             li: nuxt-link(to="/event/july2022/hunt/") 討伐リスト
             li: nuxt-link(to="/event/july2022/recipe/") レシピ / 材料リスト
             li: nuxt-link(to="/event/july2022/story/") ストーリークエスト
