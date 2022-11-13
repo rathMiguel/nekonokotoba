@@ -11,6 +11,7 @@ nav#nav
         font-awesome-icon(:icon="['far', 'flag']").icon
         span.link-text EVENT DATA
       ul
+        li: nuxt-link(to="/event/nov2022mimimi/").link-wrap ミミミのミッションマスター2022
         li: nuxt-link(to="/event/").link-wrap 過去イベント一覧
     li
       .link-wrap
