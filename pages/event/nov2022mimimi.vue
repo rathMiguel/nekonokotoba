@@ -182,7 +182,7 @@ export default {
             {
               title: "オリデオコン納品",
               content: "オリデオコンを15個集めてくる（うち5個納品）",
-              items: "",
+              items: "オリデオコン　15個",
               memo: ""
             },
             {
