@@ -234,7 +234,7 @@ export default {
             },
             {
               title: "レゲンシュルム研究所クエスト",
-              content: "<a href='' target='_blank'>レゲンシュルム研究所</a>クエストをクリアする",
+              content: "<a href='http://seraphic-wish.net/ro-ragtime/quest/lighthalzenq/lighthalzenq3.html' target='_blank'>レゲンシュルム研究所</a>クエストをクリアする",
               items: "スピングラス 1個<br>白ひげ 1個<br>研究所の通行パス 1個<br>囚人の腕輪 1個<br>ガラス玉 1個<br>聖水 5個<br>花たば 1個",
               memo: ""
             },
@@ -339,7 +339,7 @@ export default {
               memo: ""
             },
             {
-              title: "困りもののわんちゃんクエスト",
+              title: "困りもののワンちゃんクエスト",
               content: "<a href='http://www.roquest.work/index.php?RockRidge#weekly_quest_02' target='_blank'>困りもののわんちゃん</a>クエストをクリアする",
               items: "",
               memo: "要ロックリッジクエスト"
